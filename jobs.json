@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-12-24T12:11:01.836196",
+  "last_updated": "2025-12-24T12:17:03.748823",
   "total_jobs": 208,
   "jobs": [
     {
@@ -11,7 +11,7 @@
       "url": "https://www.accenture.com/au-en/services/digital-engineering-manufacturing",
       "source": "Company-Accenture",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:51.666536"
+      "scraped_at": "2025-12-24T12:17:00.108171"
     },
     {
       "id": "1207cd936b41",
@@ -22,7 +22,7 @@
       "url": "https://www.accenture.com/au-en/services/data-ai",
       "source": "Company-Accenture",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:51.666519"
+      "scraped_at": "2025-12-24T12:17:00.108154"
     },
     {
       "id": "7b1f3330fd34",
@@ -33,7 +33,7 @@
       "url": "https://www.accenture.com/au-en/services/cloud",
       "source": "Company-Accenture",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:51.666484"
+      "scraped_at": "2025-12-24T12:17:00.108120"
     },
     {
       "id": "6e76c15d3eb1",
@@ -44,7 +44,7 @@
       "url": "https://www.cultureamp.com/platform",
       "source": "Company-Culture Amp",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:49.877393"
+      "scraped_at": "2025-12-24T12:16:59.622875"
     },
     {
       "id": "78d4d187d595",
@@ -55,7 +55,7 @@
       "url": "https://www.cultureamp.com/platform",
       "source": "Company-Culture Amp",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:49.877375"
+      "scraped_at": "2025-12-24T12:16:59.622857"
     },
     {
       "id": "ddd53463ae0f",
@@ -66,7 +66,7 @@
       "url": "https://www.cultureamp.com/",
       "source": "Company-Culture Amp",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:49.877350"
+      "scraped_at": "2025-12-24T12:16:59.622833"
     },
     {
       "id": "b5ef9ed68c18",
@@ -77,7 +77,7 @@
       "url": "https://developers.freelancer.com",
       "source": "Company-Freelancer",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:47.235096"
+      "scraped_at": "2025-12-24T12:16:57.140438"
     },
     {
       "id": "ca80f8a054e0",
@@ -88,7 +88,7 @@
       "url": "https://careers.anz.com/job/Bengaluru-DevOps-Engineer/1331610566/",
       "source": "Company-ANZ",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:46.848186"
+      "scraped_at": "2025-12-24T12:16:56.790492"
     },
     {
       "id": "91c2411404d0",
@@ -99,7 +99,7 @@
       "url": "https://careers.anz.com/job/Bengaluru-Java-Developer-Production-Support-Engineer/1331614866/",
       "source": "Company-ANZ",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:46.848128"
+      "scraped_at": "2025-12-24T12:16:56.790464"
     },
     {
       "id": "a727970e23d0",
@@ -110,7 +110,7 @@
       "url": "https://careers.anz.com/job/Bengaluru-Lead-Engineer/1331616666/",
       "source": "Company-ANZ",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:46.848086"
+      "scraped_at": "2025-12-24T12:16:56.790412"
     },
     {
       "id": "2fea518e9695",
@@ -121,7 +121,7 @@
       "url": "https://www.siteminder.com/hotel-commerce/",
       "source": "Company-SiteMinder",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:45.849748"
+      "scraped_at": "2025-12-24T12:16:56.102757"
     },
     {
       "id": "319936ac0b90",
@@ -132,7 +132,7 @@
       "url": "https://www.siteminder.com/hotel-commerce/",
       "source": "Company-SiteMinder",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:45.849721"
+      "scraped_at": "2025-12-24T12:16:56.102726"
     },
     {
       "id": "4aa71b1f22cd",
@@ -143,7 +143,7 @@
       "url": "https://careers.sportsbet.com.au/jobs/senior-software-engineer-net-fanduel-melbourne-vic-australia",
       "source": "Company-Sportsbet",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:44.753999"
+      "scraped_at": "2025-12-24T12:16:55.291977"
     },
     {
       "id": "540870ecc490",
@@ -154,7 +154,7 @@
       "url": "https://careers.sportsbet.com.au/jobs/lead-engineer-net-fanduel-melbourne-vic-australia",
       "source": "Company-Sportsbet",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:44.753979"
+      "scraped_at": "2025-12-24T12:16:55.291956"
     },
     {
       "id": "6e165f9def1f",
@@ -165,7 +165,7 @@
       "url": "https://careers.sportsbet.com.au/data-science",
       "source": "Company-Sportsbet",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:44.753928"
+      "scraped_at": "2025-12-24T12:16:55.291902"
     },
     {
       "id": "578ba0834e36",
@@ -176,7 +176,7 @@
       "url": "https://careers.airwallex.com/job/b25fabff-0118-4393-9b48-844ce4421d8e/senior-software-engineer-backend-gtpn-platform-relocate-to-singapore/",
       "source": "Company-Airwallex",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:11.373030"
+      "scraped_at": "2025-12-24T12:16:20.979186"
     },
     {
       "id": "d86c4cd45896",
@@ -187,7 +187,7 @@
       "url": "https://careers.airwallex.com/job/b0737a10-7238-4a21-bd69-0b6c0a5aec5e/senior-it-engineer-lrc/",
       "source": "Company-Airwallex",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:11.372996"
+      "scraped_at": "2025-12-24T12:16:20.979155"
     },
     {
       "id": "9cbb434d6968",
@@ -198,7 +198,7 @@
       "url": "https://careers.airwallex.com/job/b0737a10-7238-4a21-bd69-0b6c0a5aec5e/senior-it-engineer-lrc/",
       "source": "Company-Airwallex",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:11.372967"
+      "scraped_at": "2025-12-24T12:16:20.979128"
     },
     {
       "id": "95255f276607",
@@ -209,7 +209,7 @@
       "url": "https://careers.airwallex.com/job/259dd6b7-1999-41fc-a63e-655fbd25d3c0/engineering-manager-core-banking-relocate-to-singapore/",
       "source": "Company-Airwallex",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:11.372935"
+      "scraped_at": "2025-12-24T12:16:20.979096"
     },
     {
       "id": "aac891dc7d69",
@@ -220,7 +220,7 @@
       "url": "https://careers.airwallex.com/job/259dd6b7-1999-41fc-a63e-655fbd25d3c0/engineering-manager-core-banking-relocate-to-singapore/",
       "source": "Company-Airwallex",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:11.372904"
+      "scraped_at": "2025-12-24T12:16:20.979065"
     },
     {
       "id": "70d1e8a8fa4e",
@@ -231,7 +231,7 @@
       "url": "https://careers.airwallex.com/job/3b437afd-d2f9-4886-ba90-ba293174a1d2/staff-software-engineer-core-banking-relocate-to-singapore/",
       "source": "Company-Airwallex",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:11.372869"
+      "scraped_at": "2025-12-24T12:16:20.979031"
     },
     {
       "id": "4b54d10f6336",
@@ -242,7 +242,7 @@
       "url": "https://careers.airwallex.com/job/ed7aab22-c316-4e90-bc0c-b68ba1181fc0/senior-staff-software-engineer-core-banking-relocate-to-singapore/",
       "source": "Company-Airwallex",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:11.372832"
+      "scraped_at": "2025-12-24T12:16:20.978993"
     },
     {
       "id": "b739aabb0e6b",
@@ -253,7 +253,7 @@
       "url": "https://careers.airwallex.com/job/ed7aab22-c316-4e90-bc0c-b68ba1181fc0/senior-staff-software-engineer-core-banking-relocate-to-singapore/",
       "source": "Company-Airwallex",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:11.372800"
+      "scraped_at": "2025-12-24T12:16:20.978961"
     },
     {
       "id": "aa2e43584a38",
@@ -264,7 +264,7 @@
       "url": "https://careers.airwallex.com/job/81cd0165-ed24-4133-8621-da6e7289574b/senior-ios-engineer-gtpn-platform/",
       "source": "Company-Airwallex",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:11.372766"
+      "scraped_at": "2025-12-24T12:16:20.978925"
     },
     {
       "id": "43180d5ee6d6",
@@ -275,7 +275,7 @@
       "url": "https://careers.airwallex.com/job/2907ac01-75ab-4b1c-beba-1cc0b2251091/senior-backend-engineer-financial-markets/",
       "source": "Company-Airwallex",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:11.372723"
+      "scraped_at": "2025-12-24T12:16:20.978885"
     },
     {
       "id": "545a43dda499",
@@ -286,7 +286,7 @@
       "url": "https://www.wisetechglobal.com/careers/students-and-graduates/",
       "source": "Company-Wisetech",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:10.763010"
+      "scraped_at": "2025-12-24T12:16:19.356584"
     },
     {
       "id": "fafded5860a7",
@@ -297,7 +297,7 @@
       "url": "https://www.databricks.com/product/databricks-sql",
       "source": "Company-Databricks",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:10.265264"
+      "scraped_at": "2025-12-24T12:16:18.946305"
     },
     {
       "id": "cbe75015b289",
@@ -308,7 +308,7 @@
       "url": "https://www.databricks.com/product/delta-sharing",
       "source": "Company-Databricks",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:10.265247"
+      "scraped_at": "2025-12-24T12:16:18.946290"
     },
     {
       "id": "53a622d6e92d",
@@ -319,7 +319,7 @@
       "url": "https://www.databricks.com/product/delta-lake-on-databricks",
       "source": "Company-Databricks",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:10.265230"
+      "scraped_at": "2025-12-24T12:16:18.946273"
     },
     {
       "id": "49ec73a1807a",
@@ -330,7 +330,7 @@
       "url": "https://www.databricks.com/product/data-intelligence-platform",
       "source": "Company-Databricks",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:10.265214"
+      "scraped_at": "2025-12-24T12:16:18.946254"
     },
     {
       "id": "201c392ac8a4",
@@ -341,7 +341,7 @@
       "url": "https://www.databricks.com/company/partners/built-on-partner-program",
       "source": "Company-Databricks",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:10.265196"
+      "scraped_at": "2025-12-24T12:16:18.946218"
     },
     {
       "id": "b38944ca0aa0",
@@ -352,7 +352,7 @@
       "url": "https://www.databricks.com/company/partners/data-partner-program",
       "source": "Company-Databricks",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:10.265165"
+      "scraped_at": "2025-12-24T12:16:18.946193"
     },
     {
       "id": "e2c3b3d0607e",
@@ -363,7 +363,7 @@
       "url": "https://www.databricks.com/company/partners/consulting-and-si",
       "source": "Company-Databricks",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:10.265111"
+      "scraped_at": "2025-12-24T12:16:18.946158"
     },
     {
       "id": "0ab7806c85a0",
@@ -374,7 +374,7 @@
       "url": "https://www.databricks.com/company/partners/cloud-partners",
       "source": "Company-Databricks",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:10.265080"
+      "scraped_at": "2025-12-24T12:16:18.946128"
     },
     {
       "id": "1fdf1256208b",
@@ -385,7 +385,7 @@
       "url": "https://safetyculture.com/apps",
       "source": "Company-SafetyCulture",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:08.055807"
+      "scraped_at": "2025-12-24T12:16:16.568133"
     },
     {
       "id": "ff6f9ebd269c",
@@ -396,7 +396,7 @@
       "url": "https://developer.safetyculture.com",
       "source": "Company-SafetyCulture",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:08.055769"
+      "scraped_at": "2025-12-24T12:16:16.568096"
     },
     {
       "id": "d1ac0c28464e",
@@ -407,7 +407,7 @@
       "url": "https://www.cloudflare.com/connectivity-cloud/",
       "source": "Company-CloudFlare",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:07.582160"
+      "scraped_at": "2025-12-24T12:16:15.796502"
     },
     {
       "id": "4783bcc327de",
@@ -418,7 +418,7 @@
       "url": "https://www.splunk.com/en_us/products/platform.html",
       "source": "Company-Splunk",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:07.251082"
+      "scraped_at": "2025-12-24T12:16:15.479567"
     },
     {
       "id": "567df06f401a",
@@ -429,7 +429,7 @@
       "url": "https://www.adobe.com/documentcloud.html",
       "source": "Company-Adobe",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:06.293968"
+      "scraped_at": "2025-12-24T12:16:14.556346"
     },
     {
       "id": "2d1c030edfb3",
@@ -440,7 +440,7 @@
       "url": "https://www.adobe.com/creativecloud.html?promoid=ZP46FD38&mv=other",
       "source": "Company-Adobe",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:06.293912"
+      "scraped_at": "2025-12-24T12:16:14.556291"
     },
     {
       "id": "b69e854d84fd",
@@ -451,7 +451,7 @@
       "url": "https://www.mongodb.com/books",
       "source": "Company-MongoDB",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:05.689508"
+      "scraped_at": "2025-12-24T12:16:14.034174"
     },
     {
       "id": "24d94975d27d",
@@ -462,7 +462,7 @@
       "url": "https://www.mongodb.com/products/tools/compass",
       "source": "Company-MongoDB",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:05.689425"
+      "scraped_at": "2025-12-24T12:16:14.034093"
     },
     {
       "id": "fc2e1a5fc481",
@@ -473,7 +473,7 @@
       "url": "https://www.mongodb.com/products/platform/atlas-database",
       "source": "Company-MongoDB",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:05.689369"
+      "scraped_at": "2025-12-24T12:16:14.034041"
     },
     {
       "id": "f8650abb6ad2",
@@ -484,7 +484,7 @@
       "url": "https://www.mongodb.com/products/platform",
       "source": "Company-MongoDB",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:05.689343"
+      "scraped_at": "2025-12-24T12:16:14.034015"
     },
     {
       "id": "ef2cb8c60cf2",
@@ -495,7 +495,7 @@
       "url": "https://developer.spotify.com/",
       "source": "Company-Spotify",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:03.276907"
+      "scraped_at": "2025-12-24T12:16:11.785100"
     },
     {
       "id": "f3f1c11575c0",
@@ -506,7 +506,7 @@
       "url": "https://www.vivcourt.com/careers/trading-internship/",
       "source": "Company-VivCourt Trading",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:00.161002"
+      "scraped_at": "2025-12-24T12:16:05.774971"
     },
     {
       "id": "41b65e23664b",
@@ -517,7 +517,7 @@
       "url": "https://www.vivcourt.com/careers/graduate-energy-team/",
       "source": "Company-VivCourt Trading",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:00.160990"
+      "scraped_at": "2025-12-24T12:16:05.774958"
     },
     {
       "id": "52c4697bd4a7",
@@ -528,7 +528,7 @@
       "url": "https://www.vivcourt.com/careers/graduate-trader/",
       "source": "Company-VivCourt Trading",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:10:00.160953"
+      "scraped_at": "2025-12-24T12:16:05.774922"
     },
     {
       "id": "d99687c4d3a0",
@@ -539,7 +539,7 @@
       "url": "https://akunacapital.com/work-with-us/internships/",
       "source": "Company-Akuna Capital",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:59.707381"
+      "scraped_at": "2025-12-24T12:16:05.550089"
     },
     {
       "id": "ce3f9be1b52e",
@@ -550,7 +550,7 @@
       "url": "https://www.citadel.com/what-we-do/equities/citadel-international-equities/",
       "source": "Company-Citadel",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:59.410285"
+      "scraped_at": "2025-12-24T12:16:05.434270"
     },
     {
       "id": "faa383f617db",
@@ -561,7 +561,7 @@
       "url": "https://careers.imc.com/ap/careers/students-graduates",
       "source": "Company-IMC Trading",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:58.794809"
+      "scraped_at": "2025-12-24T12:16:04.834342"
     },
     {
       "id": "660030ea25a3",
@@ -572,7 +572,7 @@
       "url": "https://www.janestreet.com/join-jane-street/internships/",
       "source": "Company-Jane Street",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:57.332504"
+      "scraped_at": "2025-12-24T12:16:03.154079"
     },
     {
       "id": "25cdfd8075a5",
@@ -583,7 +583,7 @@
       "url": "https://jobs.one-ventures.com.au/jobs?filter=eyJzZWFyY2hhYmxlX2xvY2F0aW9ucyI6WyJBdXN0cmFsaWEiXSwiam9iX2Z1bmN0aW9ucyI6WyJTb2Z0d2FyZSUyMEVuZ2luZWVyaW5nIl19",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941892"
+      "scraped_at": "2025-12-24T12:16:02.815080"
     },
     {
       "id": "f255b88520d3",
@@ -594,7 +594,7 @@
       "url": "https://jobs.airtree.vc/jobs?filter=eyJzZWFyY2hhYmxlX2xvY2F0aW9ucyI6WyJBdXN0cmFsaWEiXSwiam9iX2Z1bmN0aW9ucyI6WyJTb2Z0d2FyZSUyMEVuZ2luZWVyaW5nIl19",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941884"
+      "scraped_at": "2025-12-24T12:16:02.815072"
     },
     {
       "id": "78629350e885",
@@ -605,7 +605,7 @@
       "url": "https://squarepeg.getro.com/jobs?filter=eyJzZWFyY2hhYmxlX2xvY2F0aW9ucyI6WyJBdXN0cmFsaWEiXSwiam9iX2Z1bmN0aW9ucyI6WyJTb2Z0d2FyZSUyMEVuZ2luZWVyaW5nIl19",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941876"
+      "scraped_at": "2025-12-24T12:16:02.815065"
     },
     {
       "id": "84a4af9d5ac5",
@@ -616,7 +616,7 @@
       "url": "https://www.blackbird.vc/careers-at-blackbird#careers-collection",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941868"
+      "scraped_at": "2025-12-24T12:16:02.815057"
     },
     {
       "id": "7a4d16018ca7",
@@ -627,7 +627,7 @@
       "url": "https://telstra.wd3.myworkdayjobs.com/Telstra_Careers?jobFamilyGroup=c9e2230c29a501d616f983a2eb055f31",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941861"
+      "scraped_at": "2025-12-24T12:16:02.815050"
     },
     {
       "id": "9fce04b76b72",
@@ -638,7 +638,7 @@
       "url": "https://careers.dxc.com/global/en/c/software-applications-jobs",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941852"
+      "scraped_at": "2025-12-24T12:16:02.815040"
     },
     {
       "id": "364bca3dae8e",
@@ -649,7 +649,7 @@
       "url": "https://nri-anz.com/careers/#opportunities",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941844"
+      "scraped_at": "2025-12-24T12:16:02.815033"
     },
     {
       "id": "3c3e304a1650",
@@ -660,7 +660,7 @@
       "url": "https://www.thoughtworks.com/en-au/careers",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941838"
+      "scraped_at": "2025-12-24T12:16:02.815027"
     },
     {
       "id": "ff64e53882a5",
@@ -671,7 +671,7 @@
       "url": "https://www.accenture.com/au-en/careers/jobsearch?jk=software&sb=0&vw=0&is_rj=0&pg=1",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941830"
+      "scraped_at": "2025-12-24T12:16:02.815019"
     },
     {
       "id": "5471e5388a74",
@@ -682,7 +682,7 @@
       "url": "https://kpmg.com/au/en/home/careers/job-search/technology.html",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941821"
+      "scraped_at": "2025-12-24T12:16:02.815012"
     },
     {
       "id": "fc6fc5ed6aa1",
@@ -693,7 +693,7 @@
       "url": "https://jobs-au.pwc.com/experiencedhires/au/en/search-results",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941814"
+      "scraped_at": "2025-12-24T12:16:02.815003"
     },
     {
       "id": "df40492952fd",
@@ -704,7 +704,7 @@
       "url": "https://jobs.deloitte.com.au/search/?createNewAlert=false&q=software&locationsearch=australia&optionsFacetsDD_city=&optionsFacetsDD_customfield4=&optionsFacetsDD_customfield1=",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941806"
+      "scraped_at": "2025-12-24T12:16:02.814993"
     },
     {
       "id": "a04307f4621a",
@@ -715,7 +715,7 @@
       "url": "https://careers.ey.com/ey/search/?createNewAlert=false&q=software&locationsearch=australia&optionsFacetsDD_country=AU&optionsFacetsDD_customfield1=",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941798"
+      "scraped_at": "2025-12-24T12:16:02.814986"
     },
     {
       "id": "380fbefed760",
@@ -726,7 +726,7 @@
       "url": "https://ebuu.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/requisitions?keyword=software&location=Australia&locationId=300000000294772&locationLevel=country&mode=location",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941789"
+      "scraped_at": "2025-12-24T12:16:02.814978"
     },
     {
       "id": "9fb84cf166b6",
@@ -737,7 +737,7 @@
       "url": "https://cochlear.wd3.myworkdayjobs.com/Cochlear_Careers?locations=066c4eba02cc1000aed05b59af5e0000&jobFamilyGroup=0861563e299c1000e3caebf38bd00000",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941780"
+      "scraped_at": "2025-12-24T12:16:02.814971"
     },
     {
       "id": "2154cfd62e82",
@@ -748,7 +748,7 @@
       "url": "https://resmed.wd3.myworkdayjobs.com/en-US/ResMed_External_Careers?q=software&source=resmed_careers&locationCountry=d903bb3fedad45039383f6de334ad4db",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941773"
+      "scraped_at": "2025-12-24T12:16:02.814963"
     },
     {
       "id": "37bcddc08f4d",
@@ -759,7 +759,7 @@
       "url": "https://jobs.medibank.com.au/search/?createNewAlert=false&q=software&optionsFacetsDD_customfield1=&optionsFacetsDD_customfield2=",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941766"
+      "scraped_at": "2025-12-24T12:16:02.814956"
     },
     {
       "id": "48c17f616220",
@@ -770,7 +770,7 @@
       "url": "https://ninecareers.com.au/apply-now/?search=software",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941759"
+      "scraped_at": "2025-12-24T12:16:02.814949"
     },
     {
       "id": "d06dd2b043c4",
@@ -781,7 +781,7 @@
       "url": "https://www.cultureamp.com/company/careers#open-roles",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941752"
+      "scraped_at": "2025-12-24T12:16:02.814942"
     },
     {
       "id": "dc4f15f7ae13",
@@ -792,7 +792,7 @@
       "url": "https://karbonhq.com/careers/#roles",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941744"
+      "scraped_at": "2025-12-24T12:16:02.814934"
     },
     {
       "id": "0fbc31a7ea85",
@@ -803,7 +803,7 @@
       "url": "https://linktr.ee/s/about/careers",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941737"
+      "scraped_at": "2025-12-24T12:16:02.814927"
     },
     {
       "id": "fb7ae37a6b05",
@@ -814,7 +814,7 @@
       "url": "https://www.leapdev.io/careers",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941730"
+      "scraped_at": "2025-12-24T12:16:02.814921"
     },
     {
       "id": "70f3500f6401",
@@ -825,7 +825,7 @@
       "url": "https://careers.myob.com/explore-roles",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941723"
+      "scraped_at": "2025-12-24T12:16:02.814914"
     },
     {
       "id": "ec371f3a46d1",
@@ -836,7 +836,7 @@
       "url": "https://jobs.slalom.com/#/?locations=Sydney,Melbourne,Canberra&keywords=software",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941716"
+      "scraped_at": "2025-12-24T12:16:02.814906"
     },
     {
       "id": "c7ed3b9e9c48",
@@ -847,7 +847,7 @@
       "url": "https://www.optus.com.au/about/careers",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941705"
+      "scraped_at": "2025-12-24T12:16:02.814896"
     },
     {
       "id": "9af7337922b6",
@@ -858,7 +858,7 @@
       "url": "https://www.freelancer.com.au/careers#vacancies",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941698"
+      "scraped_at": "2025-12-24T12:16:02.814890"
     },
     {
       "id": "591b3fee7108",
@@ -869,7 +869,7 @@
       "url": "https://careers.anz.com/search/?createNewAlert=false&q=&locationsearch=&optionsFacetsDD_country=&optionsFacetsDD_customfield4=&optionsFacetsDD_customfield5=Engineering&optionsFacetsDD_facility=&optionsFacetsDD_customfield1=",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941690"
+      "scraped_at": "2025-12-24T12:16:02.814883"
     },
     {
       "id": "44a6bea7e99a",
@@ -880,7 +880,7 @@
       "url": "https://www.airtasker.com/us/careers/",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941682"
+      "scraped_at": "2025-12-24T12:16:02.814875"
     },
     {
       "id": "61e4ec96b04b",
@@ -891,7 +891,7 @@
       "url": "https://www.siteminder.com/jobs/",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941673"
+      "scraped_at": "2025-12-24T12:16:02.814866"
     },
     {
       "id": "fd5b1322747b",
@@ -902,7 +902,7 @@
       "url": "https://careers.nab.com.au/en/filter/?search-keyword=&category=software%20engineering",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941667"
+      "scraped_at": "2025-12-24T12:16:02.814860"
     },
     {
       "id": "89665f8a2111",
@@ -913,7 +913,7 @@
       "url": "https://quantium.elmotalent.com.au/careers/external/jobs?page=1",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941659"
+      "scraped_at": "2025-12-24T12:16:02.814852"
     },
     {
       "id": "00fd2ab08161",
@@ -924,7 +924,7 @@
       "url": "https://careers.sportsbet.com.au/jobs/search?query=",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941652"
+      "scraped_at": "2025-12-24T12:16:02.814846"
     },
     {
       "id": "0be411ab212b",
@@ -935,7 +935,7 @@
       "url": "https://jobs.cisco.com/jobs/SearchJobs/?21178=%5B214420%5D&21178_format=6020&21181=%5B187%5D&21181_format=6023&listFilterMode=1",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941645"
+      "scraped_at": "2025-12-24T12:16:02.814839"
     },
     {
       "id": "79eb06dfdb1a",
@@ -946,7 +946,7 @@
       "url": "https://octopus.com/company/careers",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941638"
+      "scraped_at": "2025-12-24T12:16:02.814832"
     },
     {
       "id": "b4faeeb2248c",
@@ -957,7 +957,7 @@
       "url": "https://careers.expediagroup.com/jobs/?keyword=&filter%5Bcategory%5D=Technology&filter%5Bcountry%5D=Australia",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941631"
+      "scraped_at": "2025-12-24T12:16:02.814825"
     },
     {
       "id": "28e8dbb5e47c",
@@ -968,7 +968,7 @@
       "url": "https://dovetail.com/careers/#hiring-process",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941623"
+      "scraped_at": "2025-12-24T12:16:02.814818"
     },
     {
       "id": "4829a152bcb6",
@@ -979,7 +979,7 @@
       "url": "https://careers.mastercard.com/us/en/c/software-engineering-jobs",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941617"
+      "scraped_at": "2025-12-24T12:16:02.814811"
     },
     {
       "id": "9e90dd36ef15",
@@ -990,7 +990,7 @@
       "url": "https://jobs.zendesk.com/us/en/search-results?qcountry=Australia",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941609"
+      "scraped_at": "2025-12-24T12:16:02.814804"
     },
     {
       "id": "0ece9f384b0b",
@@ -1001,7 +1001,7 @@
       "url": "https://careers.honeywell.com/us/en/search-results?keywords=&p=ChIJ38WHZwf9KysRUhNblaFnglM&location=Australia",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941602"
+      "scraped_at": "2025-12-24T12:16:02.814796"
     },
     {
       "id": "42bb3969a133",
@@ -1012,7 +1012,7 @@
       "url": "https://www.domain.com.au/group/life-at-domain/careers/jobs/?locations=sydney-office%2Cmelbourne-office%2Cperth-office%2Cbrisbane-office&filter=&keyword=software",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941594"
+      "scraped_at": "2025-12-24T12:16:02.814789"
     },
     {
       "id": "b8b678bd5d0f",
@@ -1023,7 +1023,7 @@
       "url": "https://www.wowcareers.com.au/jobs/listing?page=1&query=&expertise=Information+Technology&postcode=&location_within=&refine_requisition_number=&refine_posted_within=&state=&country=Australia&worktype=&brand=WooliesX",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941587"
+      "scraped_at": "2025-12-24T12:16:02.814781"
     },
     {
       "id": "22836bff7ec3",
@@ -1034,7 +1034,7 @@
       "url": "https://jobs.lever.co/xero?department=Technology&location=Melbourne%2C%20AU",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941579"
+      "scraped_at": "2025-12-24T12:16:02.814774"
     },
     {
       "id": "8ace8adfbeac",
@@ -1045,7 +1045,7 @@
       "url": "https://tyro.wd3.myworkdayjobs.com/Tyro",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941572"
+      "scraped_at": "2025-12-24T12:16:02.814766"
     },
     {
       "id": "b94de4c38fc8",
@@ -1056,7 +1056,7 @@
       "url": "https://www.rokt.com/careers/?teams=Engineering&location=Sydney",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941565"
+      "scraped_at": "2025-12-24T12:16:02.814760"
     },
     {
       "id": "962f57987f75",
@@ -1067,7 +1067,7 @@
       "url": "https://careers.airwallex.com/jobs/?team%5B%5D=engineering&location%5B%5D=melbourne&location%5B%5D=sydney&order=newest",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941557"
+      "scraped_at": "2025-12-24T12:16:02.814751"
     },
     {
       "id": "5593ec46a00a",
@@ -1078,7 +1078,7 @@
       "url": "https://www.seek.com.au/SEEK-jobs/at-this-company",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941547"
+      "scraped_at": "2025-12-24T12:16:02.814738"
     },
     {
       "id": "733cf6cb8c18",
@@ -1089,7 +1089,7 @@
       "url": "https://www.linkedin.com/jobs/search/?currentJobId=4047624447&f_C=41624&geoId=92000000&origin=COMPANY_PAGE_JOBS_CLUSTER_EXPANSION",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941539"
+      "scraped_at": "2025-12-24T12:16:02.814730"
     },
     {
       "id": "9297752f691e",
@@ -1100,7 +1100,7 @@
       "url": "https://job-boards.greenhouse.io/vgw",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941531"
+      "scraped_at": "2025-12-24T12:16:02.814723"
     },
     {
       "id": "b77667637ca0",
@@ -1111,7 +1111,7 @@
       "url": "https://recruitment.macquarie.com/en_US/careers/SearchJobs/?592=%5B887281%5D&592_format=9525&1270=%5B347511%5D&1270_format=3248&listFilterMode=1&jobRecordsPerPage=9&jobOffset=0",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941518"
+      "scraped_at": "2025-12-24T12:16:02.814712"
     },
     {
       "id": "0f56a532ac08",
@@ -1122,7 +1122,7 @@
       "url": "https://cba.wd3.myworkdayjobs.com/CommBank_Careers?locationCountry=d903bb3fedad45039383f6de334ad4db&jobFamilyGroup=089636baad99015305bcc5419301256c",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941510"
+      "scraped_at": "2025-12-24T12:16:02.814704"
     },
     {
       "id": "364680c0eb8b",
@@ -1133,7 +1133,7 @@
       "url": "https://jobs.dolby.com/careers?location=australia&pid=25278532&domain=dolby.com&sort_by=relevance&triggerGoButton=false&triggerGoButton=true",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941503"
+      "scraped_at": "2025-12-24T12:16:02.814697"
     },
     {
       "id": "590f6bd31ba8",
@@ -1144,7 +1144,7 @@
       "url": "https://www.immutable.com/jobs",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941495"
+      "scraped_at": "2025-12-24T12:16:02.814690"
     },
     {
       "id": "9e6b4f315f29",
@@ -1155,7 +1155,7 @@
       "url": "https://www.wisetechglobal.com/careers/current-openings/",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941489"
+      "scraped_at": "2025-12-24T12:16:02.814684"
     },
     {
       "id": "dc96d8bc5032",
@@ -1166,7 +1166,7 @@
       "url": "https://www.databricks.com/company/careers/open-positions?department=all&location=Australia",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941481"
+      "scraped_at": "2025-12-24T12:16:02.814676"
     },
     {
       "id": "cebf1be37ed4",
@@ -1177,7 +1177,7 @@
       "url": "https://www.rea-group.com/careers/jobs/?team%5B0%5D=Tech_Other#job-results",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941474"
+      "scraped_at": "2025-12-24T12:16:02.814669"
     },
     {
       "id": "c3fd33813a1a",
@@ -1188,7 +1188,7 @@
       "url": "https://safetyculture.com/jobs/",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941466"
+      "scraped_at": "2025-12-24T12:16:02.814661"
     },
     {
       "id": "8c6501b635b9",
@@ -1199,7 +1199,7 @@
       "url": "https://www.cloudflare.com/careers/jobs/?location=Australia",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941459"
+      "scraped_at": "2025-12-24T12:16:02.814655"
     },
     {
       "id": "f581972d1eea",
@@ -1210,7 +1210,7 @@
       "url": "https://www.splunk.com/en_us/careers/search-jobs.html?page=1&location=Australia&team=Products%20and%20Technology",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941451"
+      "scraped_at": "2025-12-24T12:16:02.814647"
     },
     {
       "id": "f0bf3f591e75",
@@ -1221,7 +1221,7 @@
       "url": "https://careers.salesforce.com/en/jobs/?search=&country=Australia&team=Software+Engineering&pagesize=20#results",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941443"
+      "scraped_at": "2025-12-24T12:16:02.814639"
     },
     {
       "id": "31cce75de7ec",
@@ -1232,7 +1232,7 @@
       "url": "https://careers.adobe.com/us/en/search-results?qcountry=Australia",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941435"
+      "scraped_at": "2025-12-24T12:16:02.814631"
     },
     {
       "id": "27110a2a13f4",
@@ -1243,7 +1243,7 @@
       "url": "https://www.mongodb.com/company/careers/teams/engineering",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941428"
+      "scraped_at": "2025-12-24T12:16:02.814624"
     },
     {
       "id": "78115b36f7e7",
@@ -1254,7 +1254,7 @@
       "url": "https://www.lifeatspotify.com/jobs?l=sydney&c=backend&c=client-c&c=data&c=developer-tools-infrastructure&c=engineering-leadership&c=machine-learning&c=mobile&c=network-engineering-it&c=security&c=tech-research&c=web",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941420"
+      "scraped_at": "2025-12-24T12:16:02.814617"
     },
     {
       "id": "5fe092a7bd31",
@@ -1265,7 +1265,7 @@
       "url": "https://careers.thetradedesk.com/jobs?location=melbourne",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941411"
+      "scraped_at": "2025-12-24T12:16:02.814608"
     },
     {
       "id": "0f0bba92083e",
@@ -1276,7 +1276,7 @@
       "url": "https://jobs.careers.microsoft.com/global/en/search?lc=Australia&p=Software%20Engineering&l=en_us&pg=1&pgSz=20&o=Relevance&flt=true",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941400"
+      "scraped_at": "2025-12-24T12:16:02.814597"
     },
     {
       "id": "d486f5183105",
@@ -1287,7 +1287,7 @@
       "url": "https://careers.tiktok.com/position?keywords=&category=&location=CT_1102314%2CCT_244&project=&type=&job_hot_flag=&current=1&limit=10&functionCategory=&tag=",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941392"
+      "scraped_at": "2025-12-24T12:16:02.814589"
     },
     {
       "id": "0cf16cde65d7",
@@ -1298,7 +1298,7 @@
       "url": "https://careers.snap.com/jobs?location=Sydney",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941384"
+      "scraped_at": "2025-12-24T12:16:02.814581"
     },
     {
       "id": "2f72ea93e193",
@@ -1309,7 +1309,7 @@
       "url": "https://block.xyz/careers/jobs?isRemote=true&locations%5B%5D=Melbourne%2C%20Australia&locations%5B%5D=Sydney%2C%20Australia",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941376"
+      "scraped_at": "2025-12-24T12:16:02.814574"
     },
     {
       "id": "a61bd9a6458e",
@@ -1320,7 +1320,7 @@
       "url": "https://www.amazon.jobs/en/search?base_query=&loc_query=Australia&latitude=&longitude=&loc_group_id=&invalid_location=false&country=AUS&city=&region=&county=",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941368"
+      "scraped_at": "2025-12-24T12:16:02.814566"
     },
     {
       "id": "ab9763f375a6",
@@ -1331,7 +1331,7 @@
       "url": "https://jobs.apple.com/en-au/search?location=australia-AUSC",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941360"
+      "scraped_at": "2025-12-24T12:16:02.814558"
     },
     {
       "id": "e089b3bdcae4",
@@ -1342,7 +1342,7 @@
       "url": "https://www.google.com/about/careers/applications/jobs/results/?location=Australia",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941352"
+      "scraped_at": "2025-12-24T12:16:02.814550"
     },
     {
       "id": "c56aa16a1bad",
@@ -1353,7 +1353,7 @@
       "url": "https://www.lifeatcanva.com/en/jobs/?page=1&team=Engineering&country=Australia&pagesize=20#results",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941343"
+      "scraped_at": "2025-12-24T12:16:02.814541"
     },
     {
       "id": "ef21de93efbb",
@@ -1364,7 +1364,7 @@
       "url": "https://www.atlassian.com/company/careers/all-jobs?team=&location=Australia&search=",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941334"
+      "scraped_at": "2025-12-24T12:16:02.814532"
     },
     {
       "id": "c2d69b303e8d",
@@ -1375,7 +1375,7 @@
       "url": "https://www.vivcourt.com/careers/graduate-software-engineer/",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941322"
+      "scraped_at": "2025-12-24T12:16:02.814520"
     },
     {
       "id": "fd2fdf0fd851",
@@ -1386,7 +1386,7 @@
       "url": "https://careers.sig.com/",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941313"
+      "scraped_at": "2025-12-24T12:16:02.814511"
     },
     {
       "id": "36e3570b239b",
@@ -1397,7 +1397,7 @@
       "url": "https://akunacapital.com/careers#careers",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941306"
+      "scraped_at": "2025-12-24T12:16:02.814504"
     },
     {
       "id": "6a49976f3e5f",
@@ -1408,7 +1408,7 @@
       "url": "https://www.citadel.com/careers/open-opportunities/engineering/",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941297"
+      "scraped_at": "2025-12-24T12:16:02.814495"
     },
     {
       "id": "0be3f1046743",
@@ -1419,7 +1419,7 @@
       "url": "https://careers.imc.com/ap/en/search-results?qcountry=Australia",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941287"
+      "scraped_at": "2025-12-24T12:16:02.814486"
     },
     {
       "id": "72a9b19bd0e8",
@@ -1430,7 +1430,7 @@
       "url": "https://www.linkedin.com/company/optiver/jobs/?originalSubdomain=au",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941272"
+      "scraped_at": "2025-12-24T12:16:02.814473"
     },
     {
       "id": "f6b99b10796b",
@@ -1441,7 +1441,7 @@
       "url": "https://www.janestreet.com/join-jane-street/open-roles/",
       "source": "GitHub-TechJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.941256"
+      "scraped_at": "2025-12-24T12:16:02.814455"
     },
     {
       "id": "f5a4815355b8",
@@ -1452,7 +1452,7 @@
       "url": "https://www.google.com/about/careers/applications/jobs/results/?category=DATA_CENTER_OPERATIONS&category=DEVELOPER_RELATIONS&category=HARDWARE_ENGINEERING&category=INFORMATION_TECHNOLOGY&category=MANUFACTURING_SUPPLY_CHAIN&category=NETWORK_ENGINEERING&category=PRODUCT_MANAGEMENT&category=PROGRAM_MANAGEMENT&category=SOFTWARE_ENGINEERING&category=TECHNICAL_INFRASTRUCTURE_ENGINEERING&category=TECHNICAL_SOLUTIONS&category=TECHNICAL_WRITING&category=USER_EXPERIENCE&jex=ENTRY_LEVEL&employment_type=PART_TIME&employment_type=INTERN&location=Australia",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820549"
+      "scraped_at": "2025-12-24T12:16:02.660594"
     },
     {
       "id": "4c3d33c0a284",
@@ -1463,7 +1463,7 @@
       "url": "https://careers.imc.com/us/en/students",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820540"
+      "scraped_at": "2025-12-24T12:16:02.660585"
     },
     {
       "id": "a35088c522a0",
@@ -1474,7 +1474,7 @@
       "url": "https://www.palantir.com/careers/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820532"
+      "scraped_at": "2025-12-24T12:16:02.660576"
     },
     {
       "id": "eb595c67d240",
@@ -1485,7 +1485,7 @@
       "url": "https://www.atlassian.com/company/careers/all-jobs?team=Interns&location=Australia&search=",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820524"
+      "scraped_at": "2025-12-24T12:16:02.660568"
     },
     {
       "id": "6cde2e546e84",
@@ -1496,7 +1496,7 @@
       "url": "https://australiance.vincere.io/careers/?unit=km&radius=100&page=1&search=1",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820516"
+      "scraped_at": "2025-12-24T12:16:02.660560"
     },
     {
       "id": "11f970b57c6e",
@@ -1507,7 +1507,7 @@
       "url": "https://jobs.cisco.com/jobs/SearchJobs/intern?21178=%5B214420%5D&21178_format=6020&listFilterMode=1",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820508"
+      "scraped_at": "2025-12-24T12:16:02.660551"
     },
     {
       "id": "a74618122a75",
@@ -1518,7 +1518,7 @@
       "url": "https://www.jumptrading.com/careers/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820499"
+      "scraped_at": "2025-12-24T12:16:02.660542"
     },
     {
       "id": "529aa568addd",
@@ -1529,7 +1529,7 @@
       "url": "https://www.westpac.com.au/about-westpac/careers/pathways/grad-program/summer-intern/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820489"
+      "scraped_at": "2025-12-24T12:16:02.660531"
     },
     {
       "id": "b8ebb3fae61d",
@@ -1540,7 +1540,7 @@
       "url": "https://au.prosple.com/graduate-employers/boeing-australia/jobs-internships/it-university-summer-internship",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820481"
+      "scraped_at": "2025-12-24T12:16:02.660522"
     },
     {
       "id": "1787bb4051a6",
@@ -1551,7 +1551,7 @@
       "url": "https://www.aurecongroup.com/careers/early-careers/intern-programme",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820472"
+      "scraped_at": "2025-12-24T12:16:02.660513"
     },
     {
       "id": "39fa055f44a5",
@@ -1562,7 +1562,7 @@
       "url": "https://www.ubs.com/global/en/careers/early-careers/opportunities/summer-internship.html",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820463"
+      "scraped_at": "2025-12-24T12:16:02.660504"
     },
     {
       "id": "dfc6a3e153ec",
@@ -1573,7 +1573,7 @@
       "url": "https://www.canva.com/newsroom/news/a-look-into-early-talent-at-canva/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820455"
+      "scraped_at": "2025-12-24T12:16:02.660494"
     },
     {
       "id": "cd0882f9c19c",
@@ -1584,7 +1584,7 @@
       "url": "https://jobs.swagapp.com/AU/jobs/resonate-solutions-pty-limited-software-engineer-intern-open-to-both-part-time-and-full-time-candidates",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820445"
+      "scraped_at": "2025-12-24T12:16:02.660484"
     },
     {
       "id": "50927d937b0b",
@@ -1595,7 +1595,7 @@
       "url": "https://careers.thetradedesk.com/early-careers",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820434"
+      "scraped_at": "2025-12-24T12:16:02.660473"
     },
     {
       "id": "c1b473c4518c",
@@ -1606,7 +1606,7 @@
       "url": "https://www.nab.com.au/about-us/careers/early-careers/technology-talent-program",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820426"
+      "scraped_at": "2025-12-24T12:16:02.660465"
     },
     {
       "id": "b66910af4b19",
@@ -1617,7 +1617,7 @@
       "url": "https://swipejobs.breezy.hr/p/07fe79726f76-intern-software-engineer-testing",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820414"
+      "scraped_at": "2025-12-24T12:16:02.660452"
     },
     {
       "id": "8a1fcfcc54c5",
@@ -1628,7 +1628,7 @@
       "url": "https://www.linkedin.com/jobs/view/intern-client-group-apac-at-wellington-management-3871933188/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=au",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820405"
+      "scraped_at": "2025-12-24T12:16:02.660443"
     },
     {
       "id": "ea85bc14c857",
@@ -1639,7 +1639,7 @@
       "url": "https://www.cochlear.com/au/en/corporate/careers/jobs-at-cochlear/graduates-and-students",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820396"
+      "scraped_at": "2025-12-24T12:16:02.660433"
     },
     {
       "id": "5e1facf95a24",
@@ -1650,7 +1650,7 @@
       "url": "https://www.xero.com/au/graduate/internships/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820386"
+      "scraped_at": "2025-12-24T12:16:02.660423"
     },
     {
       "id": "62b63d9881b5",
@@ -1661,7 +1661,7 @@
       "url": "https://www.baesystems.com/en-aus/careers/graduate-and-early-careers#1573679801007",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820373"
+      "scraped_at": "2025-12-24T12:16:02.660412"
     },
     {
       "id": "dd5935b0607d",
@@ -1672,7 +1672,7 @@
       "url": "https://www.riotinto.com/careers/graduates-students",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820365"
+      "scraped_at": "2025-12-24T12:16:02.660395"
     },
     {
       "id": "5da24ccf7d2c",
@@ -1683,7 +1683,7 @@
       "url": "https://www.mcgrathnicol.com/students/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820355"
+      "scraped_at": "2025-12-24T12:16:02.660385"
     },
     {
       "id": "4dcec0c71028",
@@ -1694,7 +1694,7 @@
       "url": "https://students.unimelb.edu.au/careers/find-a-job/working-on-campus/students@work-internship-program",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820345"
+      "scraped_at": "2025-12-24T12:16:02.660377"
     },
     {
       "id": "88a02831edaa",
@@ -1705,7 +1705,7 @@
       "url": "https://www.macquarie.com/au/en/careers/graduates-and-interns.html",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820337"
+      "scraped_at": "2025-12-24T12:16:02.660369"
     },
     {
       "id": "8526e0aa4193",
@@ -1716,7 +1716,7 @@
       "url": "https://www.telstra.com.au/careers/students-and-graduates/career-start-internship",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820328"
+      "scraped_at": "2025-12-24T12:16:02.660359"
     },
     {
       "id": "843a800c1d91",
@@ -1727,7 +1727,7 @@
       "url": "https://www.anz.com.au/careers/programs/summer-intern/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820317"
+      "scraped_at": "2025-12-24T12:16:02.660349"
     },
     {
       "id": "8a2fedcee834",
@@ -1738,7 +1738,7 @@
       "url": "https://resmed.wd3.myworkdayjobs.com/en-US/ResMed_External_Careers/job/Sydney-NSW-Australia/Expression-of-Interest---Summer-Internship-2024-25_JR_032438?q=auearlycareers",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820308"
+      "scraped_at": "2025-12-24T12:16:02.660340"
     },
     {
       "id": "677faf0a5a02",
@@ -1749,7 +1749,7 @@
       "url": "https://optiver.com/working-at-optiver/internships/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820300"
+      "scraped_at": "2025-12-24T12:16:02.660331"
     },
     {
       "id": "dcf36f7a7fed",
@@ -1760,7 +1760,7 @@
       "url": "https://www.dst.defence.gov.au/careers/student-opportunities/stem-cadetship-program",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820292"
+      "scraped_at": "2025-12-24T12:16:02.660323"
     },
     {
       "id": "f8a9770f4a3e",
@@ -1771,7 +1771,7 @@
       "url": "https://www.digitalprofession.gov.au/career-development/digital-supported-pathway-programs/data-and-digital-cadet-program",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820282"
+      "scraped_at": "2025-12-24T12:16:02.660313"
     },
     {
       "id": "495b793948e5",
@@ -1782,7 +1782,7 @@
       "url": "https://www.rheinmetall.com/en/job/eoi_engineering_internship_program_/612891",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820272"
+      "scraped_at": "2025-12-24T12:16:02.660303"
     },
     {
       "id": "0eb3d05d1013",
@@ -1793,7 +1793,7 @@
       "url": "https://www.inkompass.global/australia-internship-program",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820264"
+      "scraped_at": "2025-12-24T12:16:02.660294"
     },
     {
       "id": "4ada621b48e4",
@@ -1804,7 +1804,7 @@
       "url": "https://pages.csgi.com/brisbane-graduate-roles-internships/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820252"
+      "scraped_at": "2025-12-24T12:16:02.660281"
     },
     {
       "id": "57e57e02e90b",
@@ -1815,7 +1815,7 @@
       "url": "https://careers.mastercard.com/us/en/job/R-225554/Software-Engineer-Intern-2024-2025-Summer-Internship-Australia",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820244"
+      "scraped_at": "2025-12-24T12:16:02.660272"
     },
     {
       "id": "2d534fd1a220",
@@ -1826,7 +1826,7 @@
       "url": "https://www.csiro.au/en/careers/scholarships-student-opportunities/undergraduate-studentships/undergraduate-vacation-studentships",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820235"
+      "scraped_at": "2025-12-24T12:16:02.660261"
     },
     {
       "id": "7edf0e64b9af",
@@ -1837,7 +1837,7 @@
       "url": "https://app.calctree.com/public/Engineering-Internships-Rolling-basis-wUhzYCtxLj6Ag5PBjC8d66",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820226"
+      "scraped_at": "2025-12-24T12:16:02.660232"
     },
     {
       "id": "916c1374c3ae",
@@ -1848,7 +1848,7 @@
       "url": "https://jobs.swagapp.com/AU/jobs/resonate-solutions-pty-limited-software-engineer-intern-open-to-both-part-time-and-full-time-candidates?src=Linkedin",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820211"
+      "scraped_at": "2025-12-24T12:16:02.660221"
     },
     {
       "id": "4710a02652d3",
@@ -1859,7 +1859,7 @@
       "url": "https://www.nab.com.au/about-us/careers/early-careers/summer-intern-program",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820202"
+      "scraped_at": "2025-12-24T12:16:02.660211"
     },
     {
       "id": "c978a4ae84f3",
@@ -1870,7 +1870,7 @@
       "url": "https://www.mongodb.com/careers/jobs/5961332",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820192"
+      "scraped_at": "2025-12-24T12:16:02.660197"
     },
     {
       "id": "f54dbb7c007d",
@@ -1881,7 +1881,7 @@
       "url": "https://apply.workable.com/freelancer/j/6FF7D94E6E/?utm_source=linkedin.com&src=LinkedIn&src=LinkedIn&utm_source=linkedin.com&gh_src=i5qg2y1&utm_source=linkedin.com",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820183"
+      "scraped_at": "2025-12-24T12:16:02.660188"
     },
     {
       "id": "55f8351e4a1d",
@@ -1892,7 +1892,7 @@
       "url": "https://ejov.fa.ca2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/16000?utm_medium=jobboard&utm_source=linkedin",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820173"
+      "scraped_at": "2025-12-24T12:16:02.660179"
     },
     {
       "id": "d8e6adbb9e64",
@@ -1903,7 +1903,7 @@
       "url": "https://www.commbank.com.au/about-us/careers/graduate-intern-programs.html",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820162"
+      "scraped_at": "2025-12-24T12:16:02.660167"
     },
     {
       "id": "ac5196fe4d1e",
@@ -1914,7 +1914,7 @@
       "url": "https://www.arup.com/careers/early-careers/internships/australasia/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820148"
+      "scraped_at": "2025-12-24T12:16:02.660155"
     },
     {
       "id": "1ad2b7dee56c",
@@ -1925,7 +1925,7 @@
       "url": "https://www.bdo.com.au/en-au/about/student-careers",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820120"
+      "scraped_at": "2025-12-24T12:16:02.660144"
     },
     {
       "id": "09c9f504717b",
@@ -1936,7 +1936,7 @@
       "url": "https://www.deloitte.com/au/en/careers/students/summer-vacation-program-careers.html",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820105"
+      "scraped_at": "2025-12-24T12:16:02.660127"
     },
     {
       "id": "59b9a9c0f481",
@@ -1947,7 +1947,7 @@
       "url": "https://www.ey.com/en_au/careers/students-apply-here",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820096"
+      "scraped_at": "2025-12-24T12:16:02.660118"
     },
     {
       "id": "87e4924e73e1",
@@ -1958,7 +1958,7 @@
       "url": "https://jobs.smartrecruiters.com/ni/KPMGAustralia1/020188bd-86c7-457f-89b1-b086b90057ce-2025-technology-digital-engineering-campaign-vacationer?trid=28eb2d6d-65a4-43a6-82d0-20e7caa7ef29",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820083"
+      "scraped_at": "2025-12-24T12:16:02.660104"
     },
     {
       "id": "54f010eae96c",
@@ -1969,7 +1969,7 @@
       "url": "https://careers.airwallex.com/job/5af58cf9-341b-4f29-bbf4-2623409d7640/2024-25-software-engineer-intern-program/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820073"
+      "scraped_at": "2025-12-24T12:16:02.660094"
     },
     {
       "id": "13b08107fcec",
@@ -1980,7 +1980,7 @@
       "url": "https://www.dst.defence.gov.au/careers/student-opportunities/summer-vacation-placement-program",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820062"
+      "scraped_at": "2025-12-24T12:16:02.660084"
     },
     {
       "id": "e9f2efe2fa19",
@@ -1991,7 +1991,7 @@
       "url": "https://jobs.cisco.com/jobs/ProjectDetail/Site-Reliability-Co-Op-Emerging-Talent-Meraki-APJC/1425346",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820047"
+      "scraped_at": "2025-12-24T12:16:02.660068"
     },
     {
       "id": "39fffd291a13",
@@ -2002,7 +2002,7 @@
       "url": "https://jobs.cisco.com/jobs/ProjectDetail/Network-Support-Engineer-Intern-Fall-2024-ETR-Sydney-Meraki/1422337",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-24",
-      "scraped_at": "2025-12-24T12:09:56.820028"
+      "scraped_at": "2025-12-24T12:16:02.660047"
     },
     {
       "id": "d627eb387e48",
