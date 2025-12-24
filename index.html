@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🇦🇺 Australian Tech Jobs - Live Board</title>
     <meta name="description" content="Real-time Australian tech job board with precise timestamps. Find jobs posted within the hour!">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -208,13 +207,49 @@
         let sortDirection = 'desc';
         let recencyFilter = 'all';
 
+        // Simple CSV parser
+        function parseCSV(text) {
+            const lines = text.split('\n');
+            const headers = lines[0].split(',').map(h => h.replace(/^"|"$/g, ''));
+            const results = [];
+            
+            for (let i = 1; i < lines.length; i++) {
+                if (!lines[i].trim()) continue;
+                
+                const values = [];
+                let current = '';
+                let inQuotes = false;
+                
+                for (let j = 0; j < lines[i].length; j++) {
+                    const char = lines[i][j];
+                    
+                    if (char === '"') {
+                        inQuotes = !inQuotes;
+                    } else if (char === ',' && !inQuotes) {
+                        values.push(current);
+                        current = '';
+                    } else {
+                        current += char;
+                    }
+                }
+                values.push(current);
+                
+                const obj = {};
+                headers.forEach((header, index) => {
+                    obj[header] = values[index] || '';
+                });
+                results.push(obj);
+            }
+            
+            return results;
+        }
+
         // Load CSV data
-        Papa.parse('jobs.csv', {
-            download: true,
-            header: true,
-            complete: function(results) {
-                if (results.data && results.data.length > 0) {
-                    allJobs = results.data.filter(job => job.title && job.url);
+        fetch('jobs.csv')
+            .then(response => response.text())
+            .then(text => {
+                allJobs = parseCSV(text).filter(job => job.title && job.url);
+                if (allJobs.length > 0) {
                     initializeFilters();
                     renderTable();
                     updateStats();
@@ -222,13 +257,12 @@
                     document.getElementById('jobsContainer').innerHTML = 
                         '<div class="error">No jobs found. The scraper may still be running.</div>';
                 }
-            },
-            error: function(error) {
+            })
+            .catch(error => {
                 document.getElementById('jobsContainer').innerHTML = 
                     '<div class="error">Error loading jobs. Please try again later.</div>';
                 console.error('CSV load error:', error);
-            }
-        });
+            });
 
         function initializeFilters() {
             // Populate source filter
