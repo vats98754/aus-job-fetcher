@@ -5,3 +5,7 @@ lxml>=5.0.0
 
 # Data handling
 pandas>=2.0.0
+
+# Timezone and date parsing
+python-dateutil>=2.8.0
+pytz>=2023.3

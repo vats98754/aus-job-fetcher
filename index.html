@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🇦🇺 Australian Tech Internships</title>
+    <title>🇦🇺 Australian Tech Jobs - Live Board</title>
+    <meta name="description" content="Real-time Australian tech job board with precise timestamps. Find jobs posted within the hour!">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -14,7 +15,7 @@
             min-height: 100vh;
             padding: 20px;
         }
-        .container { max-width: 1200px; margin: 0 auto; }
+        .container { max-width: 1400px; margin: 0 auto; }
         header {
             text-align: center;
             padding: 30px;
@@ -23,7 +24,7 @@
             margin-bottom: 20px;
         }
         h1 { font-size: 2rem; margin-bottom: 10px; }
-        .subtitle { opacity: 0.9; }
+        .subtitle { opacity: 0.9; font-size: 1rem; }
         .stats { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 15px; }
         .stat { background: rgba(255,255,255,0.15); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; }
         .controls {
@@ -38,10 +39,57 @@
         input:focus, select:focus { outline: none; border-color: #3b82f6; }
         .filter-group { min-width: 140px; }
         .filter-group label { display: block; font-size: 0.8rem; color: #94a3b8; margin-bottom: 4px; }
-        .job-count { text-align: center; padding: 10px; color: #94a3b8; margin-bottom: 15px; }
+        .recency-filter {
+            display: flex;
+            gap: 8px;
+            padding: 12px;
+            background: #1e293b;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .recency-btn {
+            padding: 8px 16px;
+            background: #334155;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            color: #e2e8f0;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        .recency-btn:hover { background: #3b82f6; }
+        .recency-btn.active { 
+            background: #3b82f6; 
+            border-color: #60a5fa;
+            font-weight: 600;
+        }
+        .job-count { 
+            text-align: center; 
+            padding: 10px; 
+            color: #94a3b8; 
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
         .job-count strong { color: #22c55e; }
-        table { width: 100%; border-collapse: collapse; background: #1e293b; border-radius: 12px; overflow: hidden; }
-        th { background: #334155; padding: 14px; text-align: left; cursor: pointer; user-select: none; }
+        .job-count .fresh { color: #f59e0b; }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            background: #1e293b; 
+            border-radius: 12px; 
+            overflow: hidden; 
+        }
+        th { 
+            background: #334155; 
+            padding: 14px; 
+            text-align: left; 
+            cursor: pointer; 
+            user-select: none;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
         th:hover { background: #3b82f6; }
         th.sorted-asc::after { content: " ▲"; }
         th.sorted-desc::after { content: " ▼"; }
@@ -49,16 +97,34 @@
         tr:hover { background: #263445; }
         .job-title { font-weight: 600; color: #e2e8f0; }
         .company { color: #3b82f6; }
-        .location { color: #94a3b8; }
+        .location { color: #94a3b8; font-size: 0.9rem; }
         .salary { color: #22c55e; font-weight: 500; }
+        .timestamp {
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+        .fresh-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            background: #f59e0b;
+            color: #000;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-left: 6px;
+        }
+        .very-fresh-badge {
+            background: #22c55e;
+        }
         .source { 
             display: inline-block; padding: 3px 10px; border-radius: 12px; 
             font-size: 0.75rem; background: #334155; 
         }
         .source-seek { background: #1e3a5f; color: #60a5fa; }
-        .source-github { background: #14532d; color: #4ade80; }
+        .source-github-ausjobs { background: #14532d; color: #4ade80; }
         .source-adzuna { background: #422006; color: #fb923c; }
-        .source-indeed { background: #312e81; color: #a78bfa; }
+        .source-linkedin { background: #312e81; color: #a78bfa; }
+        .source-gradconnection { background: #4c0519; color: #f472b6; }
         .apply-btn {
             display: inline-block; padding: 6px 14px; background: #3b82f6;
             color: white; text-decoration: none; border-radius: 6px; font-size: 0.85rem;
@@ -66,19 +132,29 @@
         .apply-btn:hover { background: #2563eb; }
         .loading { text-align: center; padding: 60px; color: #94a3b8; }
         .error { text-align: center; padding: 40px; color: #f87171; }
-        footer { text-align: center; padding: 20px; color: #64748b; font-size: 0.85rem; margin-top: 20px; }
-        footer a { color: #3b82f6; }
+        footer { 
+            text-align: center; 
+            padding: 20px; 
+            color: #64748b; 
+            font-size: 0.85rem; 
+            margin-top: 20px;
+            background: #1e293b;
+            border-radius: 12px;
+        }
+        footer a { color: #3b82f6; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
         @media (max-width: 768px) {
             table { display: block; overflow-x: auto; }
             h1 { font-size: 1.5rem; }
+            .controls { flex-direction: column; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>🇦🇺 Australian Tech Internships</h1>
-            <p class="subtitle">Live job listings for tech interns & graduates</p>
+            <h1>🇦🇺 Australian Tech Jobs</h1>
+            <p class="subtitle">Real-time job board with precise timestamps • Be first to apply!</p>
             <div class="stats" id="stats">
                 <span class="stat">Loading...</span>
             </div>
@@ -102,6 +178,14 @@
             </div>
         </div>
 
+        <div class="recency-filter">
+            <button class="recency-btn active" data-hours="all">All Jobs</button>
+            <button class="recency-btn" data-hours="1">Posted < 1 Hour</button>
+            <button class="recency-btn" data-hours="6">Posted < 6 Hours</button>
+            <button class="recency-btn" data-hours="24">Posted Today</button>
+            <button class="recency-btn" data-hours="168">Posted This Week</button>
+        </div>
+
         <div class="job-count" id="jobCount">Loading jobs...</div>
 
         <div id="jobsContainer">
@@ -109,15 +193,20 @@
         </div>
 
         <footer>
-            <p>Updated: <span id="lastUpdated">-</span></p>
-            <p><a href="jobs.csv" download>📥 Download CSV</a> | <a href="jobs.json">📥 Download JSON</a></p>
+            <p>
+                Last updated: <span id="lastUpdated">-</span><br>
+                <a href="jobs.csv" download>📥 Download CSV</a> | 
+                <a href="jobs.json" download>📥 Download JSON</a> |
+                <a href="https://github.com/vats98754/aus-job-fetcher" target="_blank">⭐ Star on GitHub</a>
+            </p>
         </footer>
     </div>
 
     <script>
         let allJobs = [];
-        let sortColumn = 'posted_date';
+        let sortColumn = 'fetched_at';
         let sortDirection = 'desc';
+        let recencyFilter = 'all';
 
         // Load CSV data
         Papa.parse('jobs.csv', {
@@ -166,6 +255,16 @@
             document.getElementById('search').addEventListener('input', renderTable);
             document.getElementById('sourceFilter').addEventListener('change', renderTable);
             document.getElementById('locationFilter').addEventListener('change', renderTable);
+
+            // Recency filter buttons
+            document.querySelectorAll('.recency-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.recency-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    recencyFilter = this.dataset.hours;
+                    renderTable();
+                });
+            });
         }
 
         function updateStats() {
@@ -174,16 +273,45 @@
                 sourceCounts[job.source] = (sourceCounts[job.source] || 0) + 1;
             });
 
+            // Count fresh jobs
+            const freshJobs = allJobs.filter(j => j.hours_since_posted && parseFloat(j.hours_since_posted) <= 24).length;
+
             let statsHtml = `<span class="stat">📊 ${allJobs.length} Total Jobs</span>`;
+            if (freshJobs > 0) {
+                statsHtml += `<span class="stat">🔥 ${freshJobs} Posted Today</span>`;
+            }
             Object.entries(sourceCounts).forEach(([source, count]) => {
                 statsHtml += `<span class="stat">${source}: ${count}</span>`;
             });
             document.getElementById('stats').innerHTML = statsHtml;
 
-            // Update timestamp
-            if (allJobs.length > 0 && allJobs[0].scraped_at) {
-                const date = new Date(allJobs[0].scraped_at);
+            // Update timestamp - check both fetched_at and scraped_at
+            const timestampField = allJobs[0].fetched_at || allJobs[0].scraped_at;
+            if (allJobs.length > 0 && timestampField) {
+                const date = new Date(timestampField);
                 document.getElementById('lastUpdated').textContent = date.toLocaleString();
+            }
+        }
+
+        function formatTimeAgo(isoString) {
+            if (!isoString) return 'Unknown';
+            
+            try {
+                const date = new Date(isoString);
+                const now = new Date();
+                const diffMs = now - date;
+                const diffMins = Math.floor(diffMs / 60000);
+                const diffHours = Math.floor(diffMs / 3600000);
+                const diffDays = Math.floor(diffMs / 86400000);
+
+                if (diffMins < 1) return 'Just now';
+                if (diffMins < 60) return `${diffMins} min${diffMins > 1 ? 's' : ''} ago`;
+                if (diffHours < 24) return `${diffHours} hour${diffHours > 1 ? 's' : ''} ago`;
+                if (diffDays < 7) return `${diffDays} day${diffDays > 1 ? 's' : ''} ago`;
+                
+                return date.toLocaleDateString();
+            } catch (e) {
+                return 'Unknown';
             }
         }
 
@@ -199,96 +327,133 @@
                     (job.location && job.location.toLowerCase().includes(search));
                 const matchSource = !source || job.source === source;
                 const matchLocation = !location || job.location === location;
-                return matchSearch && matchSource && matchLocation;
-            });
-        }
-
-        function sortJobs(jobs) {
-            return jobs.sort((a, b) => {
-                let aVal = a[sortColumn] || '';
-                let bVal = b[sortColumn] || '';
-                if (sortDirection === 'asc') {
-                    return aVal.localeCompare(bVal);
+                
+                // Recency filter
+                let matchRecency = true;
+                if (recencyFilter !== 'all' && job.hours_since_posted) {
+                    const hours = parseFloat(job.hours_since_posted);
+                    const maxHours = parseInt(recencyFilter);
+                    matchRecency = hours <= maxHours;
+                } else if (recencyFilter !== 'all' && !job.hours_since_posted) {
+                    // If no timestamp and filter is active, exclude
+                    matchRecency = false;
                 }
-                return bVal.localeCompare(aVal);
+
+                return matchSearch && matchSource && matchLocation && matchRecency;
             });
         }
 
-        function getSourceClass(source) {
-            if (!source) return 'source';
-            const s = source.toLowerCase();
-            if (s.includes('seek')) return 'source source-seek';
-            if (s.includes('github')) return 'source source-github';
-            if (s.includes('adzuna')) return 'source source-adzuna';
-            if (s.includes('indeed')) return 'source source-indeed';
-            return 'source';
+        function sortJobs(jobs, column, direction) {
+            return [...jobs].sort((a, b) => {
+                let aVal = a[column] || '';
+                let bVal = b[column] || '';
+
+                // Handle numeric fields
+                if (column === 'hours_since_posted') {
+                    aVal = parseFloat(aVal) || 999999;
+                    bVal = parseFloat(bVal) || 999999;
+                }
+
+                // Handle dates
+                if (column === 'posted_at' || column === 'fetched_at') {
+                    aVal = aVal ? new Date(aVal).getTime() : 0;
+                    bVal = bVal ? new Date(bVal).getTime() : 0;
+                }
+
+                if (aVal < bVal) return direction === 'asc' ? -1 : 1;
+                if (aVal > bVal) return direction === 'asc' ? 1 : -1;
+                return 0;
+            });
         }
 
         function renderTable() {
             const filtered = getFilteredJobs();
-            const sorted = sortJobs(filtered);
+            const sorted = sortJobs(filtered, sortColumn, sortDirection);
 
-            document.getElementById('jobCount').innerHTML = 
-                `Showing <strong>${sorted.length}</strong> of ${allJobs.length} jobs`;
+            // Update count
+            const freshCount = filtered.filter(j => j.hours_since_posted && parseFloat(j.hours_since_posted) <= 1).length;
+            let countHtml = `Showing <strong>${sorted.length}</strong> job${sorted.length !== 1 ? 's' : ''}`;
+            if (freshCount > 0) {
+                countHtml += ` • <span class="fresh">${freshCount} posted within 1 hour 🔥</span>`;
+            }
+            document.getElementById('jobCount').innerHTML = countHtml;
 
             if (sorted.length === 0) {
                 document.getElementById('jobsContainer').innerHTML = 
-                    '<div class="error">No jobs match your filters.</div>';
+                    '<div class="error">No jobs match your filters. Try adjusting your search.</div>';
                 return;
             }
 
-            let html = `
-                <table>
-                    <thead>
-                        <tr>
-                            <th data-col="title" class="${sortColumn === 'title' ? 'sorted-' + sortDirection : ''}">Position</th>
-                            <th data-col="company" class="${sortColumn === 'company' ? 'sorted-' + sortDirection : ''}">Company</th>
-                            <th data-col="location" class="${sortColumn === 'location' ? 'sorted-' + sortDirection : ''}">Location</th>
-                            <th data-col="salary" class="${sortColumn === 'salary' ? 'sorted-' + sortDirection : ''}">Salary</th>
-                            <th data-col="source" class="${sortColumn === 'source' ? 'sorted-' + sortDirection : ''}">Source</th>
-                            <th data-col="posted_date" class="${sortColumn === 'posted_date' ? 'sorted-' + sortDirection : ''}">Date</th>
-                            <th>Apply</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-            `;
+            // Build table
+            let html = '<table><thead><tr>';
+            const columns = [
+                { key: 'title', label: 'Job Title' },
+                { key: 'company', label: 'Company' },
+                { key: 'location', label: 'Location' },
+                { key: 'salary', label: 'Salary' },
+                { key: 'source', label: 'Source' },
+                { key: 'posted_at', label: 'Posted' },
+                { key: 'fetched_at', label: 'Fetched' },
+                { key: 'url', label: 'Apply' }
+            ];
+
+            columns.forEach(col => {
+                const sortClass = sortColumn === col.key ? `sorted-${sortDirection}` : '';
+                html += `<th class="${sortClass}" onclick="changeSort('${col.key}')">${col.label}</th>`;
+            });
+            html += '</tr></thead><tbody>';
 
             sorted.forEach(job => {
+                const sourceClass = `source-${job.source.toLowerCase().replace(/[^a-z]/g, '-')}`;
+                
+                // Format posted time
+                let postedDisplay = 'N/A';
+                let freshBadge = '';
+                if (job.posted_at) {
+                    postedDisplay = formatTimeAgo(job.posted_at);
+                    const hours = parseFloat(job.hours_since_posted);
+                    if (!isNaN(hours)) {
+                        if (hours <= 1) {
+                            freshBadge = '<span class="very-fresh-badge">HOT! 🔥</span>';
+                        } else if (hours <= 6) {
+                            freshBadge = '<span class="fresh-badge">NEW</span>';
+                        }
+                    }
+                }
+
+                const fetchedDisplay = job.fetched_at ? formatTimeAgo(job.fetched_at) : 'N/A';
+
                 html += `
                     <tr>
-                        <td class="job-title">${escapeHtml(job.title || '-')}</td>
-                        <td class="company">${escapeHtml(job.company || '-')}</td>
-                        <td class="location">${escapeHtml(job.location || '-')}</td>
-                        <td class="salary">${escapeHtml(job.salary || '-')}</td>
-                        <td><span class="${getSourceClass(job.source)}">${escapeHtml(job.source || '-')}</span></td>
-                        <td>${escapeHtml(job.posted_date || '-')}</td>
-                        <td><a href="${escapeHtml(job.url)}" target="_blank" rel="noopener" class="apply-btn">Apply →</a></td>
+                        <td><span class="job-title">${escapeHtml(job.title)}</span>${freshBadge}</td>
+                        <td><span class="company">${escapeHtml(job.company)}</span></td>
+                        <td><span class="location">${escapeHtml(job.location)}</span></td>
+                        <td><span class="salary">${escapeHtml(job.salary || '-')}</span></td>
+                        <td><span class="source ${sourceClass}">${escapeHtml(job.source)}</span></td>
+                        <td><span class="timestamp">${postedDisplay}</span></td>
+                        <td><span class="timestamp">${fetchedDisplay}</span></td>
+                        <td><a href="${escapeHtml(job.url)}" class="apply-btn" target="_blank">Apply →</a></td>
                     </tr>
                 `;
             });
 
             html += '</tbody></table>';
             document.getElementById('jobsContainer').innerHTML = html;
+        }
 
-            // Add sort listeners
-            document.querySelectorAll('th[data-col]').forEach(th => {
-                th.addEventListener('click', () => {
-                    const col = th.dataset.col;
-                    if (sortColumn === col) {
-                        sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
-                    } else {
-                        sortColumn = col;
-                        sortDirection = 'asc';
-                    }
-                    renderTable();
-                });
-            });
+        function changeSort(column) {
+            if (sortColumn === column) {
+                sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+            } else {
+                sortColumn = column;
+                sortDirection = 'desc';
+            }
+            renderTable();
         }
 
         function escapeHtml(text) {
-            if (!text) return '';
             const div = document.createElement('div');
-            div.textContent = text;
+            div.textContent = text || '';
             return div.innerHTML;
         }
     </script>

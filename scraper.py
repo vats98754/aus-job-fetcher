@@ -10,11 +10,13 @@ import json
 import hashlib
 import re
 import sys
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from urllib.parse import urljoin, urlparse, parse_qs
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+from dateutil import parser as date_parser
+import pytz
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -46,8 +48,92 @@ AUSTRALIA_KEYWORDS = [
 ]
 
 def generate_job_id(title, company, url):
-    """Generate unique ID for deduplication."""
-    return hashlib.md5(f"{title}|{company}|{url}".encode()).hexdigest()[:12]
+    """Generate unique ID for deduplication using URL, title, and company.
+    This prevents duplicate jobs from being stored.
+    """
+    # Normalize URL by removing query parameters and fragments for better deduplication
+    parsed_url = urlparse(url)
+    clean_url = f"{parsed_url.netloc}{parsed_url.path}".lower()
+    
+    # Create a unique hash combining all three elements
+    unique_string = f"{clean_url}|{title.lower()}|{company.lower()}"
+    return hashlib.sha256(unique_string.encode()).hexdigest()[:16]
+
+def parse_relative_time(time_str):
+    """Parse relative time strings like '2 hours ago', '1 day ago' into datetime.
+    Returns ISO format timestamp or empty string if cannot parse.
+    """
+    if not time_str:
+        return ""
+    
+    time_str_lower = time_str.lower().strip()
+    now = datetime.now(timezone.utc)
+    
+    # Match patterns like "2 hours ago", "1 day ago", "30 minutes ago"
+    patterns = [
+        (r'(\d+)\s*min(?:ute)?s?\s*ago', 'minutes'),
+        (r'(\d+)\s*hour?s?\s*ago', 'hours'),
+        (r'(\d+)\s*day?s?\s*ago', 'days'),
+        (r'(\d+)\s*week?s?\s*ago', 'weeks'),
+        (r'(\d+)\s*month?s?\s*ago', 'months'),
+    ]
+    
+    for pattern, unit in patterns:
+        match = re.search(pattern, time_str_lower)
+        if match:
+            value = int(match.group(1))
+            if unit == 'minutes':
+                posted_time = now - timedelta(minutes=value)
+            elif unit == 'hours':
+                posted_time = now - timedelta(hours=value)
+            elif unit == 'days':
+                posted_time = now - timedelta(days=value)
+            elif unit == 'weeks':
+                posted_time = now - timedelta(weeks=value)
+            elif unit == 'months':
+                posted_time = now - timedelta(days=value * 30)
+            return posted_time.isoformat()
+    
+    # Try parsing as absolute date
+    try:
+        parsed_date = date_parser.parse(time_str)
+        # If no timezone, assume UTC
+        if parsed_date.tzinfo is None:
+            parsed_date = parsed_date.replace(tzinfo=timezone.utc)
+        return parsed_date.isoformat()
+    except:
+        pass
+    
+    # If "today" or "just now"
+    if 'today' in time_str_lower or 'just now' in time_str_lower or 'recently' in time_str_lower:
+        return now.isoformat()
+    
+    return ""
+
+def calculate_hours_since_posted(posted_at_iso):
+    """Calculate hours since job was posted.
+    Returns float of hours or None if cannot calculate.
+    """
+    if not posted_at_iso:
+        return None
+    
+    try:
+        posted_time = date_parser.parse(posted_at_iso)
+        now = datetime.now(timezone.utc)
+        
+        # Ensure both are timezone-aware
+        if posted_time.tzinfo is None:
+            posted_time = posted_time.replace(tzinfo=timezone.utc)
+        
+        delta = now - posted_time
+        hours = delta.total_seconds() / 3600
+        return round(hours, 1)
+    except:
+        return None
+
+def get_current_timestamp():
+    """Get current UTC timestamp in ISO format."""
+    return datetime.now(timezone.utc).isoformat()
 
 def clean_text(text):
     """Clean whitespace from text."""
@@ -134,6 +220,8 @@ def scrape_github_ausjobs():
         response.raise_for_status()
         content = response.text
         
+        current_time = get_current_timestamp()
+        
         # Parse markdown table: | [Role](URL) | Company | Location | Notes | Date |
         pattern = r'\|\s*\[([^\]]+)\]\(([^)]+)\)\s*\|\s*([^|]+)\|\s*([^|]+)\|'
         matches = re.findall(pattern, content)
@@ -161,8 +249,9 @@ def scrape_github_ausjobs():
                 'salary': '',
                 'url': job_url,
                 'source': 'GitHub-AusJobs',
-                'posted_date': datetime.now().strftime('%Y-%m-%d'),
-                'scraped_at': datetime.now().isoformat(),
+                'posted_at': '',  # Not available from this source
+                'fetched_at': current_time,
+                'hours_since_posted': None,
             })
     except Exception as e:
         print(f"  Error: {e}")
@@ -174,6 +263,8 @@ def scrape_seek():
     """Scrape SEEK for Australian tech jobs - exact job posting URLs."""
     print("🔍 Scraping SEEK Australia...")
     jobs = []
+    
+    current_time = get_current_timestamp()
     
     # Specific searches for our target roles
     searches = [
@@ -225,10 +316,19 @@ def scrape_seek():
                     company_elem = article.find('a', {'data-automation': 'jobCompany'})
                     location_elem = article.find('a', {'data-automation': 'jobLocation'})
                     salary_elem = article.find('span', {'data-automation': 'jobSalary'})
+                    time_elem = article.find('span', {'data-automation': 'jobListingDate'})
                     
                     company = clean_text(company_elem.get_text()) if company_elem else ""
                     location = clean_text(location_elem.get_text()) if location_elem else ""
                     salary = clean_text(salary_elem.get_text()) if salary_elem else ""
+                    
+                    # Parse posting time
+                    posted_at = ""
+                    if time_elem:
+                        time_text = clean_text(time_elem.get_text())
+                        posted_at = parse_relative_time(time_text)
+                    
+                    hours_since = calculate_hours_since_posted(posted_at)
                     
                     # Skip if no company
                     if not company:
@@ -246,8 +346,9 @@ def scrape_seek():
                         'salary': salary,
                         'url': link,
                         'source': 'SEEK',
-                        'posted_date': datetime.now().strftime('%Y-%m-%d'),
-                        'scraped_at': datetime.now().isoformat(),
+                        'posted_at': posted_at,
+                        'fetched_at': current_time,
+                        'hours_since_posted': hours_since,
                     })
                 except Exception:
                     continue
@@ -268,6 +369,8 @@ def scrape_adzuna_api():
     if not app_id or not app_key:
         print("  Adzuna API credentials not found, skipping")
         return jobs
+    
+    current_time = get_current_timestamp()
     
     searches = [
         "data engineer",
@@ -325,6 +428,13 @@ def scrape_adzuna_api():
                 elif result.get('salary_min'):
                     salary = f"${int(result['salary_min']):,}+"
                 
+                # Parse posting time from Adzuna's created field
+                posted_at = ""
+                if result.get('created'):
+                    posted_at = parse_relative_time(result.get('created'))
+                
+                hours_since = calculate_hours_since_posted(posted_at)
+                
                 jobs.append({
                     'id': generate_job_id(title, company, link),
                     'title': title,
@@ -333,8 +443,9 @@ def scrape_adzuna_api():
                     'salary': salary,
                     'url': link,
                     'source': 'Adzuna',
-                    'posted_date': result.get('created', '')[:10] if result.get('created') else datetime.now().strftime('%Y-%m-%d'),
-                    'scraped_at': datetime.now().isoformat(),
+                    'posted_at': posted_at,
+                    'fetched_at': current_time,
+                    'hours_since_posted': hours_since,
                 })
         except Exception as e:
             continue
@@ -346,6 +457,8 @@ def scrape_linkedin_public():
     """Scrape LinkedIn public job listings for Australian tech jobs."""
     print("🔍 Scraping LinkedIn public listings...")
     jobs = []
+    
+    current_time = get_current_timestamp()
     
     searches = [
         ("data%20engineer", "Australia"),
@@ -372,6 +485,7 @@ def scrape_linkedin_public():
                     company_elem = card.find('h4', class_='base-search-card__subtitle')
                     location_elem = card.find('span', class_='job-search-card__location')
                     link_elem = card.find('a', class_='base-card__full-link')
+                    time_elem = card.find('time', class_='job-search-card__listdate')
                     
                     if not all([title_elem, company_elem, link_elem]):
                         continue
@@ -380,6 +494,14 @@ def scrape_linkedin_public():
                     company = clean_text(company_elem.get_text())
                     location = clean_text(location_elem.get_text()) if location_elem else ""
                     link = link_elem.get('href', '')
+                    
+                    # Parse posting time
+                    posted_at = ""
+                    if time_elem:
+                        time_text = time_elem.get('datetime', '') or clean_text(time_elem.get_text())
+                        posted_at = parse_relative_time(time_text)
+                    
+                    hours_since = calculate_hours_since_posted(posted_at)
                     
                     # Verify it's a direct job URL
                     if '/jobs/view/' not in link:
@@ -401,8 +523,9 @@ def scrape_linkedin_public():
                         'salary': '',
                         'url': link.split('?')[0],  # Clean URL
                         'source': 'LinkedIn',
-                        'posted_date': datetime.now().strftime('%Y-%m-%d'),
-                        'scraped_at': datetime.now().isoformat(),
+                        'posted_at': posted_at,
+                        'fetched_at': current_time,
+                        'hours_since_posted': hours_since,
                     })
                 except Exception:
                     continue
@@ -416,6 +539,8 @@ def scrape_gradconnection():
     """Scrape GradConnection for Australian graduate tech jobs."""
     print("🔍 Scraping GradConnection...")
     jobs = []
+    
+    current_time = get_current_timestamp()
     
     try:
         url = "https://au.gradconnection.com/graduate-jobs/information-technology/"
@@ -431,6 +556,7 @@ def scrape_gradconnection():
                 title_elem = card.find('a', class_='job-title')
                 company_elem = card.find('span', class_='company-name')
                 location_elem = card.find('span', class_='location')
+                time_elem = card.find('span', class_='job-posted-date')
                 
                 if not title_elem:
                     continue
@@ -439,6 +565,14 @@ def scrape_gradconnection():
                 link = title_elem.get('href', '')
                 company = clean_text(company_elem.get_text()) if company_elem else ""
                 location = clean_text(location_elem.get_text()) if location_elem else "Australia"
+                
+                # Parse posting time
+                posted_at = ""
+                if time_elem:
+                    time_text = clean_text(time_elem.get_text())
+                    posted_at = parse_relative_time(time_text)
+                
+                hours_since = calculate_hours_since_posted(posted_at)
                 
                 if not link.startswith('http'):
                     link = f"https://au.gradconnection.com{link}"
@@ -459,8 +593,9 @@ def scrape_gradconnection():
                     'salary': '',
                     'url': link,
                     'source': 'GradConnection',
-                    'posted_date': datetime.now().strftime('%Y-%m-%d'),
-                    'scraped_at': datetime.now().isoformat(),
+                    'posted_at': posted_at,
+                    'fetched_at': current_time,
+                    'hours_since_posted': hours_since,
                 })
             except Exception:
                 continue
@@ -472,10 +607,11 @@ def scrape_gradconnection():
 
 def main():
     print("=" * 60)
-    print("🇦🇺 Australian Tech Job Scraper")
-    print(f"🕐 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print("🇦🇺 Australian Tech Job Scraper - Detailed Edition")
+    print(f"🕐 {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}")
     print("=" * 60)
     print("Filters: Australia only | Tech/Data roles | Direct job URLs")
+    print("Features: Precise timestamps | Deduplication | Recency tracking")
     print("=" * 60)
     
     merge_mode = '--merge' in sys.argv
@@ -497,36 +633,54 @@ def main():
     
     # Create DataFrame and deduplicate
     df = pd.DataFrame(all_jobs)
-    df = df.drop_duplicates(subset=['id'], keep='first')
-    df = df.sort_values('scraped_at', ascending=False)
+    print(f"📋 Jobs before deduplication: {len(df)}")
     
-    # Final validation - remove any that slipped through
-    initial_count = len(df)
+    df = df.drop_duplicates(subset=['id'], keep='first')
+    print(f"✨ Jobs after deduplication: {len(df)}")
+    
+    # Sort by fetched_at (most recent first)
+    df = df.sort_values('fetched_at', ascending=False)
     
     # Load existing and merge
     if merge_mode and os.path.exists('jobs.csv'):
         try:
             existing = pd.read_csv('jobs.csv')
+            print(f"📂 Loading {len(existing)} existing jobs")
             df = pd.concat([df, existing], ignore_index=True)
             df = df.drop_duplicates(subset=['id'], keep='first')
-            print(f"📂 Merged with existing data")
-        except Exception:
-            pass
+            print(f"🔄 After merge: {len(df)} unique jobs")
+        except Exception as e:
+            print(f"⚠️ Could not merge with existing data: {e}")
     
-    # Save CSV
+    # Calculate statistics
+    jobs_with_timestamp = df['posted_at'].notna().sum()
+    jobs_very_recent = df[df['hours_since_posted'].notna() & (df['hours_since_posted'] <= 1)].shape[0]
+    jobs_recent = df[df['hours_since_posted'].notna() & (df['hours_since_posted'] <= 24)].shape[0]
+    
+    print(f"\n📈 Statistics:")
+    print(f"  • Total unique jobs: {len(df)}")
+    print(f"  • Jobs with posting timestamps: {jobs_with_timestamp}")
+    print(f"  • Jobs posted within 1 hour: {jobs_very_recent}")
+    print(f"  • Jobs posted within 24 hours: {jobs_recent}")
+    
+    # Save CSV with all new fields
     df.to_csv('jobs.csv', index=False, quoting=csv.QUOTE_ALL)
-    print(f"✅ Saved {len(df)} jobs to jobs.csv")
+    print(f"\n✅ Saved {len(df)} jobs to jobs.csv")
     
-    # Save JSON
+    # Save JSON with metadata
     with open('jobs.json', 'w') as f:
         json.dump({
-            'last_updated': datetime.now().isoformat(),
+            'last_updated': get_current_timestamp(),
             'total_jobs': len(df),
+            'jobs_with_timestamps': int(jobs_with_timestamp),
+            'jobs_within_1_hour': int(jobs_very_recent),
+            'jobs_within_24_hours': int(jobs_recent),
             'jobs': df.to_dict(orient='records')
         }, f, indent=2)
     print(f"✅ Saved {len(df)} jobs to jobs.json")
     
-    print("\n🏁 Done!")
+    print("\n🏁 Scraping complete!")
+    print(f"🔗 View your jobs at: https://YOUR_USERNAME.github.io/aus-job-fetcher/")
 
 if __name__ == '__main__':
     main()
