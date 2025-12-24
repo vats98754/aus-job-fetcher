@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇦🇺 Australian Tech Internships</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        header {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #1e40af 0%, #7c3aed 100%);
+            border-radius: 16px;
+            margin-bottom: 20px;
+        }
+        h1 { font-size: 2rem; margin-bottom: 10px; }
+        .subtitle { opacity: 0.9; }
+        .stats { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 15px; }
+        .stat { background: rgba(255,255,255,0.15); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; }
+        .controls {
+            display: flex; gap: 15px; flex-wrap: wrap;
+            padding: 20px; background: #1e293b; border-radius: 12px; margin-bottom: 20px;
+        }
+        .search-box { flex: 1; min-width: 200px; }
+        input, select {
+            width: 100%; padding: 12px; border: 1px solid #334155;
+            border-radius: 8px; background: #0f172a; color: #e2e8f0; font-size: 1rem;
+        }
+        input:focus, select:focus { outline: none; border-color: #3b82f6; }
+        .filter-group { min-width: 140px; }
+        .filter-group label { display: block; font-size: 0.8rem; color: #94a3b8; margin-bottom: 4px; }
+        .job-count { text-align: center; padding: 10px; color: #94a3b8; margin-bottom: 15px; }
+        .job-count strong { color: #22c55e; }
+        table { width: 100%; border-collapse: collapse; background: #1e293b; border-radius: 12px; overflow: hidden; }
+        th { background: #334155; padding: 14px; text-align: left; cursor: pointer; user-select: none; }
+        th:hover { background: #3b82f6; }
+        th.sorted-asc::after { content: " ▲"; }
+        th.sorted-desc::after { content: " ▼"; }
+        td { padding: 12px 14px; border-bottom: 1px solid #334155; }
+        tr:hover { background: #263445; }
+        .job-title { font-weight: 600; color: #e2e8f0; }
+        .company { color: #3b82f6; }
+        .location { color: #94a3b8; }
+        .salary { color: #22c55e; font-weight: 500; }
+        .source { 
+            display: inline-block; padding: 3px 10px; border-radius: 12px; 
+            font-size: 0.75rem; background: #334155; 
+        }
+        .source-seek { background: #1e3a5f; color: #60a5fa; }
+        .source-github { background: #14532d; color: #4ade80; }
+        .source-adzuna { background: #422006; color: #fb923c; }
+        .source-indeed { background: #312e81; color: #a78bfa; }
+        .apply-btn {
+            display: inline-block; padding: 6px 14px; background: #3b82f6;
+            color: white; text-decoration: none; border-radius: 6px; font-size: 0.85rem;
+        }
+        .apply-btn:hover { background: #2563eb; }
+        .loading { text-align: center; padding: 60px; color: #94a3b8; }
+        .error { text-align: center; padding: 40px; color: #f87171; }
+        footer { text-align: center; padding: 20px; color: #64748b; font-size: 0.85rem; margin-top: 20px; }
+        footer a { color: #3b82f6; }
+        @media (max-width: 768px) {
+            table { display: block; overflow-x: auto; }
+            h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🇦🇺 Australian Tech Internships</h1>
+            <p class="subtitle">Live job listings for tech interns & graduates</p>
+            <div class="stats" id="stats">
+                <span class="stat">Loading...</span>
+            </div>
+        </header>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="search" placeholder="🔍 Search jobs, companies, locations...">
+            </div>
+            <div class="filter-group">
+                <label>Source</label>
+                <select id="sourceFilter">
+                    <option value="">All Sources</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Location</label>
+                <select id="locationFilter">
+                    <option value="">All Locations</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="job-count" id="jobCount">Loading jobs...</div>
+
+        <div id="jobsContainer">
+            <div class="loading">⏳ Loading job listings...</div>
+        </div>
+
+        <footer>
+            <p>Updated: <span id="lastUpdated">-</span></p>
+            <p><a href="jobs.csv" download>📥 Download CSV</a> | <a href="jobs.json">📥 Download JSON</a></p>
+        </footer>
+    </div>
+
+    <script>
+        let allJobs = [];
+        let sortColumn = 'posted_date';
+        let sortDirection = 'desc';
+
+        // Load CSV data
+        Papa.parse('jobs.csv', {
+            download: true,
+            header: true,
+            complete: function(results) {
+                if (results.data && results.data.length > 0) {
+                    allJobs = results.data.filter(job => job.title && job.url);
+                    initializeFilters();
+                    renderTable();
+                    updateStats();
+                } else {
+                    document.getElementById('jobsContainer').innerHTML = 
+                        '<div class="error">No jobs found. The scraper may still be running.</div>';
+                }
+            },
+            error: function(error) {
+                document.getElementById('jobsContainer').innerHTML = 
+                    '<div class="error">Error loading jobs. Please try again later.</div>';
+                console.error('CSV load error:', error);
+            }
+        });
+
+        function initializeFilters() {
+            // Populate source filter
+            const sources = [...new Set(allJobs.map(j => j.source).filter(Boolean))];
+            const sourceSelect = document.getElementById('sourceFilter');
+            sources.forEach(source => {
+                const opt = document.createElement('option');
+                opt.value = source;
+                opt.textContent = source;
+                sourceSelect.appendChild(opt);
+            });
+
+            // Populate location filter
+            const locations = [...new Set(allJobs.map(j => j.location).filter(Boolean))];
+            const locationSelect = document.getElementById('locationFilter');
+            locations.sort().slice(0, 30).forEach(loc => {
+                const opt = document.createElement('option');
+                opt.value = loc;
+                opt.textContent = loc.length > 25 ? loc.substring(0, 25) + '...' : loc;
+                locationSelect.appendChild(opt);
+            });
+
+            // Add event listeners
+            document.getElementById('search').addEventListener('input', renderTable);
+            document.getElementById('sourceFilter').addEventListener('change', renderTable);
+            document.getElementById('locationFilter').addEventListener('change', renderTable);
+        }
+
+        function updateStats() {
+            const sourceCounts = {};
+            allJobs.forEach(job => {
+                sourceCounts[job.source] = (sourceCounts[job.source] || 0) + 1;
+            });
+
+            let statsHtml = `<span class="stat">📊 ${allJobs.length} Total Jobs</span>`;
+            Object.entries(sourceCounts).forEach(([source, count]) => {
+                statsHtml += `<span class="stat">${source}: ${count}</span>`;
+            });
+            document.getElementById('stats').innerHTML = statsHtml;
+
+            // Update timestamp
+            if (allJobs.length > 0 && allJobs[0].scraped_at) {
+                const date = new Date(allJobs[0].scraped_at);
+                document.getElementById('lastUpdated').textContent = date.toLocaleString();
+            }
+        }
+
+        function getFilteredJobs() {
+            const search = document.getElementById('search').value.toLowerCase();
+            const source = document.getElementById('sourceFilter').value;
+            const location = document.getElementById('locationFilter').value;
+
+            return allJobs.filter(job => {
+                const matchSearch = !search || 
+                    (job.title && job.title.toLowerCase().includes(search)) ||
+                    (job.company && job.company.toLowerCase().includes(search)) ||
+                    (job.location && job.location.toLowerCase().includes(search));
+                const matchSource = !source || job.source === source;
+                const matchLocation = !location || job.location === location;
+                return matchSearch && matchSource && matchLocation;
+            });
+        }
+
+        function sortJobs(jobs) {
+            return jobs.sort((a, b) => {
+                let aVal = a[sortColumn] || '';
+                let bVal = b[sortColumn] || '';
+                if (sortDirection === 'asc') {
+                    return aVal.localeCompare(bVal);
+                }
+                return bVal.localeCompare(aVal);
+            });
+        }
+
+        function getSourceClass(source) {
+            if (!source) return 'source';
+            const s = source.toLowerCase();
+            if (s.includes('seek')) return 'source source-seek';
+            if (s.includes('github')) return 'source source-github';
+            if (s.includes('adzuna')) return 'source source-adzuna';
+            if (s.includes('indeed')) return 'source source-indeed';
+            return 'source';
+        }
+
+        function renderTable() {
+            const filtered = getFilteredJobs();
+            const sorted = sortJobs(filtered);
+
+            document.getElementById('jobCount').innerHTML = 
+                `Showing <strong>${sorted.length}</strong> of ${allJobs.length} jobs`;
+
+            if (sorted.length === 0) {
+                document.getElementById('jobsContainer').innerHTML = 
+                    '<div class="error">No jobs match your filters.</div>';
+                return;
+            }
+
+            let html = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th data-col="title" class="${sortColumn === 'title' ? 'sorted-' + sortDirection : ''}">Position</th>
+                            <th data-col="company" class="${sortColumn === 'company' ? 'sorted-' + sortDirection : ''}">Company</th>
+                            <th data-col="location" class="${sortColumn === 'location' ? 'sorted-' + sortDirection : ''}">Location</th>
+                            <th data-col="salary" class="${sortColumn === 'salary' ? 'sorted-' + sortDirection : ''}">Salary</th>
+                            <th data-col="source" class="${sortColumn === 'source' ? 'sorted-' + sortDirection : ''}">Source</th>
+                            <th data-col="posted_date" class="${sortColumn === 'posted_date' ? 'sorted-' + sortDirection : ''}">Date</th>
+                            <th>Apply</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+
+            sorted.forEach(job => {
+                html += `
+                    <tr>
+                        <td class="job-title">${escapeHtml(job.title || '-')}</td>
+                        <td class="company">${escapeHtml(job.company || '-')}</td>
+                        <td class="location">${escapeHtml(job.location || '-')}</td>
+                        <td class="salary">${escapeHtml(job.salary || '-')}</td>
+                        <td><span class="${getSourceClass(job.source)}">${escapeHtml(job.source || '-')}</span></td>
+                        <td>${escapeHtml(job.posted_date || '-')}</td>
+                        <td><a href="${escapeHtml(job.url)}" target="_blank" rel="noopener" class="apply-btn">Apply →</a></td>
+                    </tr>
+                `;
+            });
+
+            html += '</tbody></table>';
+            document.getElementById('jobsContainer').innerHTML = html;
+
+            // Add sort listeners
+            document.querySelectorAll('th[data-col]').forEach(th => {
+                th.addEventListener('click', () => {
+                    const col = th.dataset.col;
+                    if (sortColumn === col) {
+                        sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+                    } else {
+                        sortColumn = col;
+                        sortDirection = 'asc';
+                    }
+                    renderTable();
+                });
+            });
+        }
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+</html>
