@@ -1,9 +1,9 @@
 {
-  "last_updated": "2025-12-27T16:43:54.514053",
-  "total_jobs": 7499,
+  "last_updated": "2025-12-27T16:52:27.973270",
+  "total_jobs": 7521,
   "jobs": [
     {
-      "id": "d97861793741",
+      "id": "8f35611a5048",
       "title": "Software Development Graduate (2026, AWS), Sydney",
       "company": "Amazon Web Services (AWS)",
       "location": "Sydney, New South Wales, Australia",
@@ -11,10 +11,10 @@
       "url": "https://au.linkedin.com/jobs/view/software-development-graduate-2026-aws-sydney-at-amazon-web-services-aws-4298253517",
       "source": "LinkedIn",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:54.245538"
+      "scraped_at": "2025-12-27T16:52:22.322200"
     },
     {
-      "id": "ef7d1543cfdc",
+      "id": "8088d876ef0d",
       "title": "Graduate Software Engineer",
       "company": "Fivecast",
       "location": "Adelaide, South Australia, Australia",
@@ -22,10 +22,10 @@
       "url": "https://au.linkedin.com/jobs/view/graduate-software-engineer-at-fivecast-4326713291",
       "source": "LinkedIn",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:54.245419"
+      "scraped_at": "2025-12-27T16:52:22.322092"
     },
     {
-      "id": "d3a4dc69a2a0",
+      "id": "af7d909e6a27",
       "title": "Graduate Software Engineer",
       "company": "Resmed",
       "location": "Sydney, New South Wales, Australia",
@@ -33,10 +33,10 @@
       "url": "https://au.linkedin.com/jobs/view/graduate-software-engineer-at-resmed-4335663545",
       "source": "LinkedIn",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:54.245280"
+      "scraped_at": "2025-12-27T16:52:22.321986"
     },
     {
-      "id": "a768ac82a894",
+      "id": "b5720a68cf31",
       "title": "Senior Python Developer (Backend/First Python Hire)- 52077018949",
       "company": "Somewhere",
       "location": "Other Side Of The Moon, Australia",
@@ -44,10 +44,10 @@
       "url": "https://au.linkedin.com/jobs/view/senior-python-developer-backend-first-python-hire-52077018949-at-somewhere-4346335600",
       "source": "LinkedIn",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:53.562636"
+      "scraped_at": "2025-12-27T16:52:21.631170"
     },
     {
-      "id": "06d06be6b77d",
+      "id": "0e4b65bad009",
       "title": "Junior Full Stack Engineer",
       "company": "Sitemate",
       "location": "Sydney, New South Wales, Australia",
@@ -55,10 +55,10 @@
       "url": "https://au.linkedin.com/jobs/view/junior-full-stack-engineer-at-sitemate-4346540018",
       "source": "LinkedIn",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:53.562520"
+      "scraped_at": "2025-12-27T16:52:21.631068"
     },
     {
-      "id": "612431c85853",
+      "id": "134b3b83348a",
       "title": "Python Developer",
       "company": "BURGEON IT SERVICES",
       "location": "Sydney, New South Wales, Australia",
@@ -66,10 +66,10 @@
       "url": "https://au.linkedin.com/jobs/view/python-developer-at-burgeon-it-services-4345961287",
       "source": "LinkedIn",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:53.562384"
+      "scraped_at": "2025-12-27T16:52:21.630949"
     },
     {
-      "id": "8ed7aea1f6cb",
+      "id": "ba473d79df08",
       "title": "Software Engineer",
       "company": "Microsoft",
       "location": "Australia",
@@ -77,10 +77,10 @@
       "url": "https://au.linkedin.com/jobs/view/software-engineer-at-microsoft-4341055648",
       "source": "LinkedIn",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:52.863324"
+      "scraped_at": "2025-12-27T16:52:20.874810"
     },
     {
-      "id": "df92361def4f",
+      "id": "a27fb32c4a68",
       "title": "Junior Full Stack Engineer",
       "company": "Sitemate",
       "location": "Sydney, New South Wales, Australia",
@@ -88,10 +88,10 @@
       "url": "https://au.linkedin.com/jobs/view/junior-full-stack-engineer-at-sitemate-4346540018",
       "source": "LinkedIn",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:52.863212"
+      "scraped_at": "2025-12-27T16:52:20.874712"
     },
     {
-      "id": "bd726339336e",
+      "id": "5e250f89157b",
       "title": "Software Engineer, Google Maps",
       "company": "Google",
       "location": "Sydney, New South Wales, Australia",
@@ -99,76 +99,10 @@
       "url": "https://au.linkedin.com/jobs/view/software-engineer-google-maps-at-google-4325348354",
       "source": "LinkedIn",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:52.863083"
+      "scraped_at": "2025-12-27T16:52:20.874601"
     },
     {
-      "id": "a916ac2c5c23",
-      "title": "Insights Data Analyst",
-      "company": "Kmart Australia Limited",
-      "location": "Chadstone, Victoria, Australia",
-      "salary": "",
-      "url": "https://au.linkedin.com/jobs/view/insights-data-analyst-at-kmart-australia-limited-4348395997",
-      "source": "LinkedIn",
-      "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:52.071912"
-    },
-    {
-      "id": "7226d0b23f08",
-      "title": "Data Analyst \u2013 Junior and Mid",
-      "company": "Advance Delivery Consulting",
-      "location": "Hornsby, New South Wales, Australia",
-      "salary": "",
-      "url": "https://au.linkedin.com/jobs/view/data-analyst-%E2%80%93-junior-and-mid-at-advance-delivery-consulting-4329009839",
-      "source": "LinkedIn",
-      "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:52.071806"
-    },
-    {
-      "id": "ab93d374e99a",
-      "title": "Corporate Data Analyst",
-      "company": "Queensland Government",
-      "location": "South Brisbane, Queensland, Australia",
-      "salary": "",
-      "url": "https://au.linkedin.com/jobs/view/corporate-data-analyst-at-queensland-government-4345746647",
-      "source": "LinkedIn",
-      "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:52.071683"
-    },
-    {
-      "id": "03171df2f06b",
-      "title": "Data Analyst",
-      "company": "TEKsystems",
-      "location": "Sydney, New South Wales, Australia",
-      "salary": "",
-      "url": "https://au.linkedin.com/jobs/view/data-analyst-at-teksystems-4316886580",
-      "source": "LinkedIn",
-      "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:52.071572"
-    },
-    {
-      "id": "a8d9ed2989cb",
-      "title": "Data Analyst",
-      "company": "Brunel",
-      "location": "Adelaide, South Australia, Australia",
-      "salary": "",
-      "url": "https://au.linkedin.com/jobs/view/data-analyst-at-brunel-4348062343",
-      "source": "LinkedIn",
-      "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:52.071463"
-    },
-    {
-      "id": "e368fbd1d709",
-      "title": "Freelance Data Analyst",
-      "company": "Twine",
-      "location": "Australia",
-      "salary": "",
-      "url": "https://au.linkedin.com/jobs/view/freelance-data-analyst-at-twine-4329214929",
-      "source": "LinkedIn",
-      "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:52.071233"
-    },
-    {
-      "id": "bfca4d4bfc14",
+      "id": "acbd379352df",
       "title": "Master Data Analyst",
       "company": "Infosys BPM",
       "location": "Sydney, New South Wales, Australia",
@@ -176,10 +110,10 @@
       "url": "https://au.linkedin.com/jobs/view/master-data-analyst-at-infosys-bpm-4328465619",
       "source": "LinkedIn",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:52.071125"
+      "scraped_at": "2025-12-27T16:52:20.011059"
     },
     {
-      "id": "7648a9500eb6",
+      "id": "1fe1fdb45b56",
       "title": "Data Analyst",
       "company": "Infomedia",
       "location": "Sydney, New South Wales, Australia",
@@ -187,10 +121,10 @@
       "url": "https://au.linkedin.com/jobs/view/data-analyst-at-infomedia-4328501248",
       "source": "LinkedIn",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:52.071001"
+      "scraped_at": "2025-12-27T16:52:20.010962"
     },
     {
-      "id": "80aece6b8785",
+      "id": "ecf374db97d3",
       "title": "Forecasting & Data Analyst",
       "company": "ALDI Stores Australia",
       "location": "Minchinbury, New South Wales, Australia",
@@ -198,10 +132,87 @@
       "url": "https://au.linkedin.com/jobs/view/forecasting-data-analyst-at-aldi-stores-australia-4339489733",
       "source": "LinkedIn",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:52.070872"
+      "scraped_at": "2025-12-27T16:52:20.010848"
     },
     {
-      "id": "f32ffc6e78d2",
+      "id": "7d3187984e1d",
+      "title": "Data Engineer - AI and Data",
+      "company": "EY",
+      "location": "Perth, Western Australia, Australia",
+      "salary": "",
+      "url": "https://au.linkedin.com/jobs/view/data-engineer-ai-and-data-at-ey-4260779802",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:52:19.219883"
+    },
+    {
+      "id": "10133cce3f86",
+      "title": "Data Engineer \u2013 Azure & Databricks",
+      "company": "N2S.Global",
+      "location": "Sydney, New South Wales, Australia",
+      "salary": "",
+      "url": "https://au.linkedin.com/jobs/view/data-engineer-%E2%80%93-azure-databricks-at-n2s-global-4345839871",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:52:19.219786"
+    },
+    {
+      "id": "227aae6117cc",
+      "title": "Data Engineer - Databricks",
+      "company": "CareCone Group",
+      "location": "Melbourne, Victoria, Australia",
+      "salary": "",
+      "url": "https://au.linkedin.com/jobs/view/data-engineer-databricks-at-carecone-group-4345644875",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:52:19.219682"
+    },
+    {
+      "id": "d9bc09b4a62d",
+      "title": "Data Engineer \u2013 Azure & Databricks",
+      "company": "N2S.Global",
+      "location": "Melbourne, Victoria, Australia",
+      "salary": "",
+      "url": "https://au.linkedin.com/jobs/view/data-engineer-%E2%80%93-azure-databricks-at-n2s-global-4345915248",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:52:19.219579"
+    },
+    {
+      "id": "c838d5125312",
+      "title": "Senior Data Engineer (Fabric/Data Factory)",
+      "company": "SKL Technology",
+      "location": "Greater Sydney Area",
+      "salary": "",
+      "url": "https://au.linkedin.com/jobs/view/senior-data-engineer-fabric-data-factory-at-skl-technology-4328676024",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:52:19.219470"
+    },
+    {
+      "id": "2d0e9abcce2d",
+      "title": "Data Engineer",
+      "company": "UCentric",
+      "location": "Sydney, New South Wales, Australia",
+      "salary": "",
+      "url": "https://au.linkedin.com/jobs/view/data-engineer-at-ucentric-4328676158",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:52:19.219362"
+    },
+    {
+      "id": "79743b80b3cb",
+      "title": "Graduate Data Center Engineer",
+      "company": "CAI",
+      "location": "Melbourne, Victoria, Australia",
+      "salary": "",
+      "url": "https://au.linkedin.com/jobs/view/graduate-data-center-engineer-at-cai-4316907811",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:52:19.219265"
+    },
+    {
+      "id": "a891d92e08bd",
       "title": "Data Engineer",
       "company": "Cuscal Limited",
       "location": "Sydney, New South Wales, Australia",
@@ -209,10 +220,10 @@
       "url": "https://au.linkedin.com/jobs/view/data-engineer-at-cuscal-limited-4345616005",
       "source": "LinkedIn",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:51.085929"
+      "scraped_at": "2025-12-27T16:52:19.219157"
     },
     {
-      "id": "159a73c277ae",
+      "id": "650129026a15",
       "title": "Senior Data Engineer - Data & Analytics",
       "company": "KPMG Australia",
       "location": "Melbourne, Victoria, Australia",
@@ -220,10 +231,10 @@
       "url": "https://au.linkedin.com/jobs/view/senior-data-engineer-data-analytics-at-kpmg-australia-4328506408",
       "source": "LinkedIn",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:51.085812"
+      "scraped_at": "2025-12-27T16:52:19.219048"
     },
     {
-      "id": "a4f200cd769a",
+      "id": "21b4aa477f20",
       "title": "Junior Data Engineer",
       "company": "Macquarie Group",
       "location": "Sydney, New South Wales, Australia",
@@ -231,7 +242,7 @@
       "url": "https://au.linkedin.com/jobs/view/junior-data-engineer-at-macquarie-group-4348376576",
       "source": "LinkedIn",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:51.085662"
+      "scraped_at": "2025-12-27T16:52:19.218922"
     },
     {
       "id": "f5a4815355b8",
@@ -242,7 +253,7 @@
       "url": "https://www.google.com/about/careers/applications/jobs/results/?category=DATA_CENTER_OPERATIONS&category=DEVELOPER_RELATIONS&category=HARDWARE_ENGINEERING&category=INFORMATION_TECHNOLOGY&category=MANUFACTURING_SUPPLY_CHAIN&category=NETWORK_ENGINEERING&category=PRODUCT_MANAGEMENT&category=PROGRAM_MANAGEMENT&category=SOFTWARE_ENGINEERING&category=TECHNICAL_INFRASTRUCTURE_ENGINEERING&category=TECHNICAL_SOLUTIONS&category=TECHNICAL_WRITING&category=USER_EXPERIENCE&jex=ENTRY_LEVEL&employment_type=PART_TIME&employment_type=INTERN&location=Australia",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175503"
+      "scraped_at": "2025-12-27T16:52:17.053124"
     },
     {
       "id": "4c3d33c0a284",
@@ -253,7 +264,7 @@
       "url": "https://careers.imc.com/us/en/students",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175493"
+      "scraped_at": "2025-12-27T16:52:17.053115"
     },
     {
       "id": "a35088c522a0",
@@ -264,7 +275,7 @@
       "url": "https://www.palantir.com/careers/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175485"
+      "scraped_at": "2025-12-27T16:52:17.053107"
     },
     {
       "id": "eb595c67d240",
@@ -275,7 +286,7 @@
       "url": "https://www.atlassian.com/company/careers/all-jobs?team=Interns&location=Australia&search=",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175477"
+      "scraped_at": "2025-12-27T16:52:17.053099"
     },
     {
       "id": "6cde2e546e84",
@@ -286,7 +297,7 @@
       "url": "https://australiance.vincere.io/careers/?unit=km&radius=100&page=1&search=1",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175469"
+      "scraped_at": "2025-12-27T16:52:17.053091"
     },
     {
       "id": "11f970b57c6e",
@@ -297,7 +308,7 @@
       "url": "https://jobs.cisco.com/jobs/SearchJobs/intern?21178=%5B214420%5D&21178_format=6020&listFilterMode=1",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175460"
+      "scraped_at": "2025-12-27T16:52:17.053083"
     },
     {
       "id": "a74618122a75",
@@ -308,7 +319,7 @@
       "url": "https://www.jumptrading.com/careers/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175451"
+      "scraped_at": "2025-12-27T16:52:17.053074"
     },
     {
       "id": "529aa568addd",
@@ -319,7 +330,7 @@
       "url": "https://www.westpac.com.au/about-westpac/careers/pathways/grad-program/summer-intern/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175443"
+      "scraped_at": "2025-12-27T16:52:17.053066"
     },
     {
       "id": "b8ebb3fae61d",
@@ -330,7 +341,7 @@
       "url": "https://au.prosple.com/graduate-employers/boeing-australia/jobs-internships/it-university-summer-internship",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175434"
+      "scraped_at": "2025-12-27T16:52:17.053056"
     },
     {
       "id": "1787bb4051a6",
@@ -341,7 +352,7 @@
       "url": "https://www.aurecongroup.com/careers/early-careers/intern-programme",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175425"
+      "scraped_at": "2025-12-27T16:52:17.053046"
     },
     {
       "id": "39fa055f44a5",
@@ -352,7 +363,7 @@
       "url": "https://www.ubs.com/global/en/careers/early-careers/opportunities/summer-internship.html",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175416"
+      "scraped_at": "2025-12-27T16:52:17.053038"
     },
     {
       "id": "dfc6a3e153ec",
@@ -363,7 +374,7 @@
       "url": "https://www.canva.com/newsroom/news/a-look-into-early-talent-at-canva/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175406"
+      "scraped_at": "2025-12-27T16:52:17.053029"
     },
     {
       "id": "cd0882f9c19c",
@@ -374,7 +385,7 @@
       "url": "https://jobs.swagapp.com/AU/jobs/resonate-solutions-pty-limited-software-engineer-intern-open-to-both-part-time-and-full-time-candidates",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175393"
+      "scraped_at": "2025-12-27T16:52:17.053018"
     },
     {
       "id": "50927d937b0b",
@@ -385,7 +396,7 @@
       "url": "https://careers.thetradedesk.com/early-careers",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175351"
+      "scraped_at": "2025-12-27T16:52:17.053008"
     },
     {
       "id": "c1b473c4518c",
@@ -396,7 +407,7 @@
       "url": "https://www.nab.com.au/about-us/careers/early-careers/technology-talent-program",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175343"
+      "scraped_at": "2025-12-27T16:52:17.053000"
     },
     {
       "id": "b66910af4b19",
@@ -407,7 +418,7 @@
       "url": "https://swipejobs.breezy.hr/p/07fe79726f76-intern-software-engineer-testing",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175331"
+      "scraped_at": "2025-12-27T16:52:17.052988"
     },
     {
       "id": "8a1fcfcc54c5",
@@ -418,7 +429,7 @@
       "url": "https://www.linkedin.com/jobs/view/intern-client-group-apac-at-wellington-management-3871933188/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=au",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175322"
+      "scraped_at": "2025-12-27T16:52:17.052979"
     },
     {
       "id": "ea85bc14c857",
@@ -429,7 +440,7 @@
       "url": "https://www.cochlear.com/au/en/corporate/careers/jobs-at-cochlear/graduates-and-students",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175313"
+      "scraped_at": "2025-12-27T16:52:17.052970"
     },
     {
       "id": "5e1facf95a24",
@@ -440,7 +451,7 @@
       "url": "https://www.xero.com/au/graduate/internships/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175304"
+      "scraped_at": "2025-12-27T16:52:17.052960"
     },
     {
       "id": "62b63d9881b5",
@@ -451,7 +462,7 @@
       "url": "https://www.baesystems.com/en-aus/careers/graduate-and-early-careers#1573679801007",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175294"
+      "scraped_at": "2025-12-27T16:52:17.052950"
     },
     {
       "id": "dd5935b0607d",
@@ -462,7 +473,7 @@
       "url": "https://www.riotinto.com/careers/graduates-students",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175285"
+      "scraped_at": "2025-12-27T16:52:17.052942"
     },
     {
       "id": "5da24ccf7d2c",
@@ -473,7 +484,7 @@
       "url": "https://www.mcgrathnicol.com/students/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175276"
+      "scraped_at": "2025-12-27T16:52:17.052932"
     },
     {
       "id": "4dcec0c71028",
@@ -484,7 +495,7 @@
       "url": "https://students.unimelb.edu.au/careers/find-a-job/working-on-campus/students@work-internship-program",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175268"
+      "scraped_at": "2025-12-27T16:52:17.052924"
     },
     {
       "id": "88a02831edaa",
@@ -495,7 +506,7 @@
       "url": "https://www.macquarie.com/au/en/careers/graduates-and-interns.html",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175259"
+      "scraped_at": "2025-12-27T16:52:17.052916"
     },
     {
       "id": "8526e0aa4193",
@@ -506,7 +517,7 @@
       "url": "https://www.telstra.com.au/careers/students-and-graduates/career-start-internship",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175250"
+      "scraped_at": "2025-12-27T16:52:17.052906"
     },
     {
       "id": "843a800c1d91",
@@ -517,7 +528,7 @@
       "url": "https://www.anz.com.au/careers/programs/summer-intern/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175240"
+      "scraped_at": "2025-12-27T16:52:17.052897"
     },
     {
       "id": "8a2fedcee834",
@@ -528,7 +539,7 @@
       "url": "https://resmed.wd3.myworkdayjobs.com/en-US/ResMed_External_Careers/job/Sydney-NSW-Australia/Expression-of-Interest---Summer-Internship-2024-25_JR_032438?q=auearlycareers",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175231"
+      "scraped_at": "2025-12-27T16:52:17.052888"
     },
     {
       "id": "677faf0a5a02",
@@ -539,7 +550,7 @@
       "url": "https://optiver.com/working-at-optiver/internships/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175222"
+      "scraped_at": "2025-12-27T16:52:17.052878"
     },
     {
       "id": "dcf36f7a7fed",
@@ -550,7 +561,7 @@
       "url": "https://www.dst.defence.gov.au/careers/student-opportunities/stem-cadetship-program",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175211"
+      "scraped_at": "2025-12-27T16:52:17.052870"
     },
     {
       "id": "f8a9770f4a3e",
@@ -561,7 +572,7 @@
       "url": "https://www.digitalprofession.gov.au/career-development/digital-supported-pathway-programs/data-and-digital-cadet-program",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175202"
+      "scraped_at": "2025-12-27T16:52:17.052860"
     },
     {
       "id": "495b793948e5",
@@ -572,7 +583,7 @@
       "url": "https://www.rheinmetall.com/en/job/eoi_engineering_internship_program_/612891",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175192"
+      "scraped_at": "2025-12-27T16:52:17.052851"
     },
     {
       "id": "0eb3d05d1013",
@@ -583,7 +594,7 @@
       "url": "https://www.inkompass.global/australia-internship-program",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175183"
+      "scraped_at": "2025-12-27T16:52:17.052842"
     },
     {
       "id": "4ada621b48e4",
@@ -594,7 +605,7 @@
       "url": "https://pages.csgi.com/brisbane-graduate-roles-internships/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175171"
+      "scraped_at": "2025-12-27T16:52:17.052831"
     },
     {
       "id": "57e57e02e90b",
@@ -605,7 +616,7 @@
       "url": "https://careers.mastercard.com/us/en/job/R-225554/Software-Engineer-Intern-2024-2025-Summer-Internship-Australia",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175162"
+      "scraped_at": "2025-12-27T16:52:17.052823"
     },
     {
       "id": "2d534fd1a220",
@@ -616,7 +627,7 @@
       "url": "https://www.csiro.au/en/careers/scholarships-student-opportunities/undergraduate-studentships/undergraduate-vacation-studentships",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175153"
+      "scraped_at": "2025-12-27T16:52:17.052814"
     },
     {
       "id": "7edf0e64b9af",
@@ -627,7 +638,7 @@
       "url": "https://app.calctree.com/public/Engineering-Internships-Rolling-basis-wUhzYCtxLj6Ag5PBjC8d66",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175144"
+      "scraped_at": "2025-12-27T16:52:17.052805"
     },
     {
       "id": "916c1374c3ae",
@@ -638,7 +649,7 @@
       "url": "https://jobs.swagapp.com/AU/jobs/resonate-solutions-pty-limited-software-engineer-intern-open-to-both-part-time-and-full-time-candidates?src=Linkedin",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175134"
+      "scraped_at": "2025-12-27T16:52:17.052795"
     },
     {
       "id": "4710a02652d3",
@@ -649,7 +660,7 @@
       "url": "https://www.nab.com.au/about-us/careers/early-careers/summer-intern-program",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175124"
+      "scraped_at": "2025-12-27T16:52:17.052786"
     },
     {
       "id": "c978a4ae84f3",
@@ -660,7 +671,7 @@
       "url": "https://www.mongodb.com/careers/jobs/5961332",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175114"
+      "scraped_at": "2025-12-27T16:52:17.052776"
     },
     {
       "id": "f54dbb7c007d",
@@ -671,7 +682,7 @@
       "url": "https://apply.workable.com/freelancer/j/6FF7D94E6E/?utm_source=linkedin.com&src=LinkedIn&src=LinkedIn&utm_source=linkedin.com&gh_src=i5qg2y1&utm_source=linkedin.com",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175104"
+      "scraped_at": "2025-12-27T16:52:17.052767"
     },
     {
       "id": "55f8351e4a1d",
@@ -682,7 +693,7 @@
       "url": "https://ejov.fa.ca2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/16000?utm_medium=jobboard&utm_source=linkedin",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175094"
+      "scraped_at": "2025-12-27T16:52:17.052758"
     },
     {
       "id": "d8e6adbb9e64",
@@ -693,7 +704,7 @@
       "url": "https://www.commbank.com.au/about-us/careers/graduate-intern-programs.html",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175083"
+      "scraped_at": "2025-12-27T16:52:17.052745"
     },
     {
       "id": "ac5196fe4d1e",
@@ -704,7 +715,7 @@
       "url": "https://www.arup.com/careers/early-careers/internships/australasia/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175069"
+      "scraped_at": "2025-12-27T16:52:17.052733"
     },
     {
       "id": "1ad2b7dee56c",
@@ -715,7 +726,7 @@
       "url": "https://www.bdo.com.au/en-au/about/student-careers",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175057"
+      "scraped_at": "2025-12-27T16:52:17.052723"
     },
     {
       "id": "09c9f504717b",
@@ -726,7 +737,7 @@
       "url": "https://www.deloitte.com/au/en/careers/students/summer-vacation-program-careers.html",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175041"
+      "scraped_at": "2025-12-27T16:52:17.052705"
     },
     {
       "id": "59b9a9c0f481",
@@ -737,7 +748,7 @@
       "url": "https://www.ey.com/en_au/careers/students-apply-here",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175031"
+      "scraped_at": "2025-12-27T16:52:17.052695"
     },
     {
       "id": "87e4924e73e1",
@@ -748,7 +759,7 @@
       "url": "https://jobs.smartrecruiters.com/ni/KPMGAustralia1/020188bd-86c7-457f-89b1-b086b90057ce-2025-technology-digital-engineering-campaign-vacationer?trid=28eb2d6d-65a4-43a6-82d0-20e7caa7ef29",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175016"
+      "scraped_at": "2025-12-27T16:52:17.052682"
     },
     {
       "id": "54f010eae96c",
@@ -759,7 +770,7 @@
       "url": "https://careers.airwallex.com/job/5af58cf9-341b-4f29-bbf4-2623409d7640/2024-25-software-engineer-intern-program/",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.175005"
+      "scraped_at": "2025-12-27T16:52:17.052672"
     },
     {
       "id": "13b08107fcec",
@@ -770,7 +781,7 @@
       "url": "https://www.dst.defence.gov.au/careers/student-opportunities/summer-vacation-placement-program",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.174991"
+      "scraped_at": "2025-12-27T16:52:17.052662"
     },
     {
       "id": "e9f2efe2fa19",
@@ -781,7 +792,7 @@
       "url": "https://jobs.cisco.com/jobs/ProjectDetail/Site-Reliability-Co-Op-Emerging-Talent-Meraki-APJC/1425346",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.174976"
+      "scraped_at": "2025-12-27T16:52:17.052647"
     },
     {
       "id": "39fffd291a13",
@@ -792,7 +803,238 @@
       "url": "https://jobs.cisco.com/jobs/ProjectDetail/Network-Support-Engineer-Intern-Fall-2024-ETR-Sydney-Meraki/1422337",
       "source": "GitHub-AusJobs",
       "posted_date": "2025-12-27",
-      "scraped_at": "2025-12-27T16:43:49.174954"
+      "scraped_at": "2025-12-27T16:52:17.052628"
+    },
+    {
+      "id": "d97861793741",
+      "title": "Software Development Graduate (2026, AWS), Sydney",
+      "company": "Amazon Web Services (AWS)",
+      "location": "Sydney, New South Wales, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/software-development-graduate-2026-aws-sydney-at-amazon-web-services-aws-4298253517",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:54.245538"
+    },
+    {
+      "id": "ef7d1543cfdc",
+      "title": "Graduate Software Engineer",
+      "company": "Fivecast",
+      "location": "Adelaide, South Australia, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/graduate-software-engineer-at-fivecast-4326713291",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:54.245419"
+    },
+    {
+      "id": "d3a4dc69a2a0",
+      "title": "Graduate Software Engineer",
+      "company": "Resmed",
+      "location": "Sydney, New South Wales, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/graduate-software-engineer-at-resmed-4335663545",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:54.245280"
+    },
+    {
+      "id": "a768ac82a894",
+      "title": "Senior Python Developer (Backend/First Python Hire)- 52077018949",
+      "company": "Somewhere",
+      "location": "Other Side Of The Moon, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/senior-python-developer-backend-first-python-hire-52077018949-at-somewhere-4346335600",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:53.562636"
+    },
+    {
+      "id": "06d06be6b77d",
+      "title": "Junior Full Stack Engineer",
+      "company": "Sitemate",
+      "location": "Sydney, New South Wales, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/junior-full-stack-engineer-at-sitemate-4346540018",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:53.562520"
+    },
+    {
+      "id": "612431c85853",
+      "title": "Python Developer",
+      "company": "BURGEON IT SERVICES",
+      "location": "Sydney, New South Wales, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/python-developer-at-burgeon-it-services-4345961287",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:53.562384"
+    },
+    {
+      "id": "8ed7aea1f6cb",
+      "title": "Software Engineer",
+      "company": "Microsoft",
+      "location": "Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/software-engineer-at-microsoft-4341055648",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:52.863324"
+    },
+    {
+      "id": "df92361def4f",
+      "title": "Junior Full Stack Engineer",
+      "company": "Sitemate",
+      "location": "Sydney, New South Wales, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/junior-full-stack-engineer-at-sitemate-4346540018",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:52.863212"
+    },
+    {
+      "id": "bd726339336e",
+      "title": "Software Engineer, Google Maps",
+      "company": "Google",
+      "location": "Sydney, New South Wales, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/software-engineer-google-maps-at-google-4325348354",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:52.863083"
+    },
+    {
+      "id": "a916ac2c5c23",
+      "title": "Insights Data Analyst",
+      "company": "Kmart Australia Limited",
+      "location": "Chadstone, Victoria, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/insights-data-analyst-at-kmart-australia-limited-4348395997",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:52.071912"
+    },
+    {
+      "id": "7226d0b23f08",
+      "title": "Data Analyst \u2013 Junior and Mid",
+      "company": "Advance Delivery Consulting",
+      "location": "Hornsby, New South Wales, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/data-analyst-%E2%80%93-junior-and-mid-at-advance-delivery-consulting-4329009839",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:52.071806"
+    },
+    {
+      "id": "ab93d374e99a",
+      "title": "Corporate Data Analyst",
+      "company": "Queensland Government",
+      "location": "South Brisbane, Queensland, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/corporate-data-analyst-at-queensland-government-4345746647",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:52.071683"
+    },
+    {
+      "id": "03171df2f06b",
+      "title": "Data Analyst",
+      "company": "TEKsystems",
+      "location": "Sydney, New South Wales, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/data-analyst-at-teksystems-4316886580",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:52.071572"
+    },
+    {
+      "id": "a8d9ed2989cb",
+      "title": "Data Analyst",
+      "company": "Brunel",
+      "location": "Adelaide, South Australia, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/data-analyst-at-brunel-4348062343",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:52.071463"
+    },
+    {
+      "id": "e368fbd1d709",
+      "title": "Freelance Data Analyst",
+      "company": "Twine",
+      "location": "Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/freelance-data-analyst-at-twine-4329214929",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:52.071233"
+    },
+    {
+      "id": "bfca4d4bfc14",
+      "title": "Master Data Analyst",
+      "company": "Infosys BPM",
+      "location": "Sydney, New South Wales, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/master-data-analyst-at-infosys-bpm-4328465619",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:52.071125"
+    },
+    {
+      "id": "7648a9500eb6",
+      "title": "Data Analyst",
+      "company": "Infomedia",
+      "location": "Sydney, New South Wales, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/data-analyst-at-infomedia-4328501248",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:52.071001"
+    },
+    {
+      "id": "80aece6b8785",
+      "title": "Forecasting & Data Analyst",
+      "company": "ALDI Stores Australia",
+      "location": "Minchinbury, New South Wales, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/forecasting-data-analyst-at-aldi-stores-australia-4339489733",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:52.070872"
+    },
+    {
+      "id": "f32ffc6e78d2",
+      "title": "Data Engineer",
+      "company": "Cuscal Limited",
+      "location": "Sydney, New South Wales, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/data-engineer-at-cuscal-limited-4345616005",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:51.085929"
+    },
+    {
+      "id": "159a73c277ae",
+      "title": "Senior Data Engineer - Data & Analytics",
+      "company": "KPMG Australia",
+      "location": "Melbourne, Victoria, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/senior-data-engineer-data-analytics-at-kpmg-australia-4328506408",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:51.085812"
+    },
+    {
+      "id": "a4f200cd769a",
+      "title": "Junior Data Engineer",
+      "company": "Macquarie Group",
+      "location": "Sydney, New South Wales, Australia",
+      "salary": NaN,
+      "url": "https://au.linkedin.com/jobs/view/junior-data-engineer-at-macquarie-group-4348376576",
+      "source": "LinkedIn",
+      "posted_date": "2025-12-27",
+      "scraped_at": "2025-12-27T16:43:51.085662"
     },
     {
       "id": "f3e1e59b662b",
