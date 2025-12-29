@@ -605,6 +605,109 @@ def scrape_gradconnection():
     print(f"  Found {len(jobs)} jobs")
     return jobs
 
+def scrape_careerjet():
+    """Scrape CareerJet Australia for tech jobs."""
+    print("🔍 Scraping CareerJet Australia...")
+    jobs = []
+    
+    current_time = get_current_timestamp()
+    
+    searches = [
+        "data engineer",
+        "data analyst",
+        "data scientist",
+        "software engineer",
+        "software developer",
+        "backend developer",
+        "frontend developer",
+        "full stack developer",
+        "devops engineer",
+        "machine learning engineer",
+        "python developer",
+        "graduate software",
+        "junior developer",
+    ]
+    
+    for search in searches:
+        try:
+            search_encoded = search.replace(' ', '+')
+            url = f"https://www.careerjet.com.au/search/jobs?s={search_encoded}&l=Australia&sort=date"
+            response = requests.get(url, headers=HEADERS, timeout=15)
+            if response.status_code != 200:
+                continue
+            
+            soup = BeautifulSoup(response.text, 'lxml')
+            job_cards = soup.find_all('article', class_='job')
+            
+            for card in job_cards[:10]:  # Top 10 per search
+                try:
+                    # Get title
+                    title_elem = card.find('h2')
+                    if not title_elem:
+                        continue
+                    title = clean_text(title_elem.get_text())
+                    
+                    # Get link
+                    link_elem = title_elem.find('a')
+                    if not link_elem:
+                        continue
+                    link = link_elem.get('href', '')
+                    if link and not link.startswith('http'):
+                        link = 'https://www.careerjet.com.au' + link
+                    
+                    # Get company
+                    company_elem = card.find('p', class_='company')
+                    company = clean_text(company_elem.get_text()) if company_elem else ""
+                    
+                    # Get location
+                    loc_elem = card.find('ul', class_='location')
+                    location = clean_text(loc_elem.get_text()) if loc_elem else "Australia"
+                    
+                    # Get salary if available
+                    salary_elem = card.find('li', class_='salary')
+                    salary = clean_text(salary_elem.get_text()) if salary_elem else ""
+                    
+                    # Get posted date
+                    date_elem = card.find('ul', class_='date')
+                    posted_at = ""
+                    if date_elem:
+                        date_text = clean_text(date_elem.get_text())
+                        posted_at = parse_relative_time(date_text)
+                    
+                    hours_since = calculate_hours_since_posted(posted_at)
+                    
+                    # Skip if no company
+                    if not company:
+                        continue
+                    
+                    # Verify job title
+                    if not is_valid_job_title(title):
+                        continue
+                    
+                    # Verify Australia location
+                    if not is_australia_location(location, title):
+                        continue
+                    
+                    jobs.append({
+                        'id': generate_job_id(title, company, link),
+                        'title': title,
+                        'company': company,
+                        'location': location,
+                        'salary': salary,
+                        'url': link,
+                        'source': 'CareerJet',
+                        'posted_at': posted_at,
+                        'fetched_at': current_time,
+                        'hours_since_posted': hours_since,
+                    })
+                except Exception:
+                    continue
+        except Exception as e:
+            continue
+    
+    print(f"  Found {len(jobs)} jobs")
+    return jobs
+
 def main():
     print("=" * 60)
     print("🇦🇺 Australian Tech Job Scraper - Detailed Edition")
@@ -621,6 +724,7 @@ def main():
     # Scrape all sources
     all_jobs.extend(scrape_github_ausjobs())
     all_jobs.extend(scrape_seek())
+    all_jobs.extend(scrape_careerjet())  # Added CareerJet as SEEK alternative
     all_jobs.extend(scrape_adzuna_api())
     all_jobs.extend(scrape_linkedin_public())
     all_jobs.extend(scrape_gradconnection())
@@ -680,7 +784,7 @@ def main():
     print(f"✅ Saved {len(df)} jobs to jobs.json")
     
     print("\n🏁 Scraping complete!")
-    print(f"🔗 View your jobs at: https://YOUR_USERNAME.github.io/aus-job-fetcher/")
+    print(f"🔗 View your jobs at: https://vats98754.github.io/aus-job-fetcher/")
 
 if __name__ == '__main__':
     main()
